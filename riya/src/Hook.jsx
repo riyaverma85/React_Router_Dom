@@ -36,7 +36,7 @@ let sem=(e)=>{
   return (
     <>
     Enter your Name :<input  type='text' onChange={change}/>
-    <h1>Name= {name}</h1>
+    <h1>Name = {name}</h1>
     Enter City :<input type='city' onChange={sem}/>
     <h1>City = {city}</h1>
     </>
