@@ -13,7 +13,7 @@ const Child= ({myname,myage,myprice,myproductname,myimg}) => {
     <div>
      <h1>Hello Child </h1>
      <img src={img} alt="" />
-     <h2>my name is = {myname}</h2>
+     <h2>My name is = {myname}</h2>
      <h2>my age is = {myage}</h2>
      <h2>my price is ={myprice}</h2>
      <h2>my product is ={myproductname}</h2>
