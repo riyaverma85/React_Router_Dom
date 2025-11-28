@@ -11,7 +11,7 @@ const Child= ({myname,myage,myprice,myproductname,myimg}) => {
 
   return (
     <div>
-     <h1>Hello Child</h1>
+     <h1>Hello Child </h1>
      <img src={img} alt="" />
      <h2>my name is = {myname}</h2>
      <h2>my age is = {myage}</h2>
