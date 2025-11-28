@@ -1,0 +1,51 @@
+//rafce
+import React, { useState } from 'react'
+import Navbar from './assets/Navbar';
+import Header from './assets/footer';
+import Img from'./assets/react.svg'
+import ClickMeButton from './assets/footer';
+const App = () => {
+let age=18;
+//  const[age,setAge]=useState("");
+ const loadAge=()=>{
+    if(age>=18){
+      alert(" you vote")
+    }
+    else{
+      alert(" you note vote")
+    }
+ }
+//  const App = () => {
+//  const Riya=()=>{
+// let sum=0
+//   for(let i=1;i<=10;i++){
+    
+//     if(i%2==0){
+//       sum++;
+//     } 
+//   }
+//   alert(`total even numbers =${sum}`)
+//  }
+//   return (
+//     <div>
+//       <button onClick={Riya} >count even Numbers</button><br/><br/>
+//     </div>
+//   )
+// }
+// export default App;
+
+//////////////////////location .href="form"dekhna he
+  return (
+    <div>
+    {/* <Navbar/>
+      <h1>Hello App</h1>
+      {/* <input type="text" value={age} onChange={(e)=>setAge(e.target.value)}/> 
+      <button onClick={loadAge} style={{color:"red"}}>Click Me</button><br/><br/>
+    <img src={Img} alt="" />
+    <Header/>
+    <ClickMeButton/>
+    <Footer2/> */}
+    </div>
+  )
+}
+export default App;
