@@ -13,7 +13,7 @@ let Dec=()=>{
     <>
     <h1>Counter</h1>
     <p>count:{count}</p>
-    
+    <button></button>
     </>
   )
 }
