@@ -1,5 +1,5 @@
 import React from 'react'
-import "./taiwind.css"
+// import "./taiwind.css"
 import img from "/src/one.jpg"
 import { FaHome } from "react-icons/fa";
 import { IoIosContacts } from "react-icons/io";
@@ -9,7 +9,6 @@ const App = () => {
   return (
     <>
     <header className='flex justify-between px-3'>
-    {/* <div  class="bg-[url('/src/bgimg.jpg')] bg-cover bg-center bg-no-repeat h-96 w-full"> */}
     <img src={img} alt="Logo" class="h-12 w-auto rounded-3xl "  />
     <ul className='flex items-center'>
     <li className='text-cyan-700 p-2 flex '><FaHome />Home</li>
