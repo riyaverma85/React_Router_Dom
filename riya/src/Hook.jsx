@@ -14,7 +14,7 @@ let Dec=()=>{
     <h1>Counter</h1>
     <p>count:{count}</p>
     <button onClick={Inc}>Incrimet</button>
-    <button></button>
+    <button>Decriment</button>
     </>
   )
 }
