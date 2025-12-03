@@ -19,5 +19,4 @@ let Dec=()=>{
     </>
   )
 }
-
 export default App
