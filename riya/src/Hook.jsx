@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 const App = () => {
-  let [count,setcount] =useState(0)
+  let [count,setcount]=useState(0)
   let Inc=()=>{
     setcount(count+1)
     console.log(count);
