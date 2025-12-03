@@ -1,22 +1,43 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+// // import "./Hook.css"
+// const App = () => {
+//   let [count,setcount]=useState(0)
+//   let Inc=()=>{
+//     setcount(count+1)
+//     console.log(count);
+//   }
+// let Dec=()=>{
+//   setcount(count-1)
+//   console.log(count)
+// }
+//   return (
+//     <>
+//     <h1>Counter</h1>
+//     <p>count:{count}</p>
+//     <button onClick={Inc} className='text-' >Incrimet</button>
+//     <button onClick={Dec}>Decriment</button>
+//     </>
+//   )
+// }
+// export default App
 
-const App = () => {
-  let [count,setcount]=useState(0)
-  let Inc=()=>{
-    setcount(count+1)
-    console.log(count);
+
+import React, { useState } from 'react'
+const Hook = () => {
+  let [name,setname]=useState("")
+
+  let change=(e)=>{
+    setname(e.target.value)
   }
-let Dec=()=>{
-  setcount(count-1)
-  console.log(count)
-}
+
+
   return (
     <>
-    <h1>Counter</h1>
-    <p>count:{count}</p>
-    <button onClick={Inc} >Incrimet</button>
-    <button onClick={Dec}>Decriment</button>
+    Enter your name:<input  type='text' onChange={change}/>
+    <h1>name {name}</h1>
+    Enter city :<input type='text' onChange={(e)=>setname(e.target.value)}/>
+    <h1>city {name}</h1>
     </>
   )
 }
-export default App
+export default Hook
