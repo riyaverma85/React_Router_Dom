@@ -25,18 +25,19 @@
 import React, { useState } from 'react'
 const Hook = () => {
   let [name,setname]=useState("")
-
   let change=(e)=>{
     setname(e.target.value)
   }
-
-
+let [city,setcity]=useState("")
+let sem=(e)=>{
+  setcity(e.target.value)
+}
   return (
     <>
     Enter your name:<input  type='text' onChange={change}/>
     <h1>name {name}</h1>
-    Enter city :<input type='text' onChange={(e)=>setname(e.target.value)}/>
-    <h1>city {name}</h1>
+    Enter city :<input type='city' onChange={sem}/>
+    <h1>city {city}</h1>
     </>
   )
 }
