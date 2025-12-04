@@ -44,20 +44,44 @@
 // }
 // export default Hook
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const Hook = () => {
-  let [name,setname]=useState("")
-  let Name=(e)=>{
-  setname(e.target.value)
-  console.log(name.length)
-  } 
-  return (
-    <>
-    <input type='text' value={name} onChange={Name}/>
-    <p>Name count={name.length}</p>
+// const Hook = () => {
+//   let [name,setname]=useState("")
+//   let Name=(e)=>{
+//   setname(e.target.value)
+//   console.log(name.length)
+//   } 
+//   return (
+//     <>
+//     <input type='text' value={name} onChange={Name}/>
+//     <p>Name count={name.length}</p>
     
-    </>
+//     </>
+//   )
+// }
+
+// export default Hook
+
+
+/////////////////////  input me color dene or  button click se background change    ////////////////////
+
+import React, { useState } from 'react'
+const Hook = () => {
+  let [name, setname] = useState("")
+  let [bg, setBg] = useState("Riya")
+  let Name = (e) => {
+    setname(e.target.value)
+  }
+  let changeBg = () => {
+    setBg(name)
+  }
+  return (
+    <div style={{ backgroundColor: bg, height: "100vh" }}>
+      <input type='text' value={name} onChange={Name} />
+      <br/>
+      <button onClick={changeBg}>Click me</button>
+    </div>
   )
 }
 
