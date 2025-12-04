@@ -23,35 +23,42 @@
 
 /////////   form  //////////////////////////////
 
-import React, { useState } from 'react'
-const Hook = () => {
-  let [name,setname]=useState("")
-  let change=(e)=>{
-    setname(e.target.value)
-  }
-let [city,setcity]=useState("")
-let sem=(e)=>{
-  setcity(e.target.value)
-}
-  return (
-    <>
-    Enter your Name :<input  type='text' onChange={change}/>
-    <h1>Name = {name}</h1>
-    Enter City :<input type='city' onChange={sem}/>
-    <h1>City = {city}</h1>
-    </>
-  )
-}
-export default Hook
-
-import React from 'react'
-
+// import React, { useState } from 'react'
 // const Hook = () => {
+//   let [name,setname]=useState("")
+//   let change=(e)=>{
+//     setname(e.target.value)
+//   }
+// let [city,setcity]=useState("")
+// let sem=(e)=>{
+//   setcity(e.target.value)
+// }
 //   return (
 //     <>
-    
+//     Enter your Name :<input  type='text' onChange={change}/>
+//     <h1>Name = {name}</h1>
+//     Enter City :<input type='city' onChange={sem}/>
+//     <h1>City = {city}</h1>
 //     </>
 //   )
 // }
-
 // export default Hook
+
+import React, { useState } from 'react'
+
+const Hook = () => {
+  let [name,setname]=useState("")
+  let Name=(e)=>{
+  setname(e.target.value)
+  console.log(name.length)
+  } 
+  return (
+    <>
+    <input type='text' value={name} onChange={Name}/>
+    <p>Name count={name.length}</p>
+    
+    </>
+  )
+}
+
+export default Hook
