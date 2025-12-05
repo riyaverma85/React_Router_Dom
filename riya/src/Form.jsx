@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 const Form = () => {
     let [name,setname]=useState("")
     let [email,setemail]=useState("")
@@ -18,5 +17,4 @@ const Form = () => {
     </>
   )
 }
-
 export default Form
