@@ -3,7 +3,7 @@ const Form = () => {
     let [name,setname]=useState("")
     let [email,setemail]=useState("")
     let Hundlesubmit=(e)=>{
-      //  e.preventDefault()
+       e.preventDefault()  /////////////iska use isliye kte hai ki form submit hone pr page reload na ho
        console.log(name,email);
     }
     return (
