@@ -4,7 +4,7 @@ const Form = () => {
     let [email,setemail]=useState("")
     let Hundlesubmit=(e)=>{
        e.preventDefault()
-      //  console.log(name,email);
+       console.log(name,email);
     }
     return (
     <>
