@@ -6,7 +6,6 @@ const Form = () => {
     let Hundlesubmit=(e)=>{
        e.preventDefault()
        console.log(name,email);
-
     }
     return (
     <>
