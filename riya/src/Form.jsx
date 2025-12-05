@@ -3,7 +3,7 @@ const Form = () => {
     let [name,setname]=useState("")
     let [email,setemail]=useState("")
     let Hundlesubmit=(e)=>{
-       e.preventDefault()
+      //  e.preventDefault()
        console.log(name,email);
     }
     return (
