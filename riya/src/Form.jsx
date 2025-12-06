@@ -20,3 +20,43 @@
 // export default Form
 
 ///////////////////////////////////////////////
+import React, { useState } from 'react'
+
+const Hook = () => {
+  // let [name,setname]=useState("")
+  // let[age,setage]=useState("")
+  // let [email,setemail]=useState("")
+  // let Heandling=(e)=>{
+  //   e.preventDefault()
+  // alert(`your name is ${name} and your age is${age} andyour email is ${email}`)
+  // }
+  let [form,setform]=useState({
+    name:"",
+    age:"",
+    email:"",
+    password:""
+  })
+  let handleChange=(e)=>{
+    setform({...form,[e.target.name]:e.target.value})
+  }
+  let handleSubmit=(e)=>{
+    e.preventDefault()
+    if(form.password.trim() == ""){
+      alert("password is required.")
+    }
+  }
+  return (
+    <>
+    <h1>form heandling</h1>
+    <form onSubmit={handleSubmit}>
+Enter your Name<input type='text 'name='name' value={form.name} onChange={handleChange}/><br/>
+Enter your age<input type='text'name='age' value={form.age} onChange={handleChange}/><br/>
+Enter your email<input type='text'name='email' value={form.email} onChange={handleChange}/><br/>
+Enter password<input type='text'name='password' value={form.password} onChange={handleChange} /><br/>
+<button type='submit'>shave us</button>
+    </form>
+    </>
+  )
+}
+
+export default Hook
