@@ -120,3 +120,23 @@
 
 // export default App;
 
+///////////////////////////////////////////////////
+
+import React from "react";
+import CourseCard from "./CourseCard.jsx";
+function App() {
+  const courses = [
+    { name: "React", duration: "3 months" },
+    { name: "Node.js", duration: "2 months" },
+    { name: "JavaScript", duration: "1.5 months" },
+  ];
+  return (
+    <>
+      <h1>Available Courses</h1>
+      {courses.map((course, index) => (
+        <CourseCard key={index} name={course.name} duration={course.duration} />
+      ))}
+    </>
+  );
+}
+export default App;
