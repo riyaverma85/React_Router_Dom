@@ -47,14 +47,16 @@ const Hook = () => {
   }
   return (
     <>
+    <div className='border-b-black'>
     <h1>form heandling</h1>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} >
 Enter your Name<input type='text 'name='name' value={form.name} onChange={handleChange}/><br/>
 Enter your Age<input type='text'name='age' value={form.age} onChange={handleChange}/><br/>
 Enter your Email<input type='text'name='email' value={form.email} onChange={handleChange}/><br/>
 Enter password<input type='text'name='password' value={form.password} onChange={handleChange} /><br/>
 <button type='submit'>shave Data</button>
     </form>
+    </div>
     </>
   )
 }
