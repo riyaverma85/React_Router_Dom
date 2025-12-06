@@ -90,14 +90,28 @@
 
 // export default App
 /////////////////////////////three button in tailwind css  /////////////////////
+// import React from 'react'
+// import "./App.css"
+// const App = () => {
+//   return (
+//     <>  
+//     <button className='bg-blue-700 text-amber-50 rounded-2xl px-3 py-3 hover:bg-blue-950'>Primary</button>
+//     <button className='bg-lime-400 rounded-2xl px-3 py-3 ml-3 hover:bg-emerald-800' >Success</button>
+//     <button className='bg-rose-600 text-amber-50 rounded-2xl px-3 py-3 ml-3 hover:bg-rose-900'>Danger</button>
+//     </>
+//   )
+// }
+
+// export default App
+
+//////props pass img///////////////////////////////////////////
+
 import React from 'react'
-import "./App.css"
+
 const App = () => {
   return (
-    <>  
-    <button className='bg-blue-700 text-amber-50 rounded-2xl px-3 py-3 hover:bg-blue-950'>Primary</button>
-    <button className='bg-lime-400 rounded-2xl px-3 py-3 ml-3 hover:bg-emerald-800' >Success</button>
-    <button className='bg-rose-600 text-amber-50 rounded-2xl px-3 py-3 ml-3 hover:bg-rose-900'>Danger</button>
+    <>
+    <Profile img={img} name="game"  city="Dubai"/> 
     </>
   )
 }
