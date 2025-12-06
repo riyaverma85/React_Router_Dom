@@ -70,23 +70,34 @@
 // export default App
 ///////////////   change font size use two buttons///////////////////////
 
-import React, { useState } from 'react'
-const App = () => {
-  let [fontSize,setfontSize]=useState(16)
-  let increaseFont=()=>{
-    setfontSize(fontSize+2)
-  }
-  let decreaseFont=()=>{
-    setfontSize(fontSize-2)
-  }
-  return (
-    <>
-    <p style={{fontSize: `${fontSize}px`}}>ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+// import React, { useState } from 'react'
+// const App = () => {
+//   let [fontSize,setfontSize]=useState(16)
+//   let increaseFont=()=>{
+//     setfontSize(fontSize+2)
+//   }
+//   let decreaseFont=()=>{
+//     setfontSize(fontSize-2)
+//   }
+//   return (
+//     <>
+//     <p style={{fontSize: `${fontSize}px`}}>ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+//     <button onClick={increaseFont}>+</button>
+//     <button onClick={decreaseFont}>-</button>
+//     </>
+//   )
+// }
 
-    </p>
-  
-    <button onClick={increaseFont}>+</button>
-    <button onClick={decreaseFont}>-</button>
+// export default App
+/////////////////////////////three button in tailwind css  /////////////////////
+import React from 'react'
+import "./App.css"
+const App = () => {
+  return (
+    <>  
+    <button className='bg-blue-700 text-amber-50 rounded-2xl px-3 py-3 hover:bg-blue-950'>Primary</button>
+    <button className='bg-lime-400 rounded-2xl px-3 py-3 ml-3 hover:bg-emerald-800' >Success</button>
+    <button className='bg-rose-600 text-amber-50 rounded-2xl px-3 py-3 ml-3 hover:bg-rose-900'>Danger</button>
     </>
   )
 }
