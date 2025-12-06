@@ -122,21 +122,44 @@
 
 ///////////////////////////////////////////////////
 
-import React from "react";
-import CourseCard from "./CourseCard.jsx";
+// import React from "react";
+// import CourseCard from "./CourseCard.jsx";
+// function App() {
+//   const courses = [
+//     { name: "React", duration: "3 months" },
+//     { name: "Node.js", duration: "2 months" },
+//     { name: "JavaScript", duration: "1.5 months" },
+//   ];
+//   return (
+//     <>
+//       <h1>Available Courses</h1>
+//       {courses.map((course, index) => (
+//         <CourseCard key={index} name={course.name} duration={course.duration} />
+//       ))}
+//     </>
+//   );
+// }
+// export default App;
+/////////////////////////////////////////////////////////////////
+
+import React, { useState } from "react";
 function App() {
-  const courses = [
-    { name: "React", duration: "3 months" },
-    { name: "Node.js", duration: "2 months" },
-    { name: "JavaScript", duration: "1.5 months" },
-  ];
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleMode = () => {
+    setDarkMode(!darkMode);
+  }
   return (
-    <>
-      <h1>Available Courses</h1>
-      {courses.map((course, index) => (
-        <CourseCard key={index} name={course.name} duration={course.duration} />
-      ))}
-    </>
+    <div style={{backgroundColor: darkMode ? "black" : "white",
+    color: darkMode ? "white" : "black",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    transition: "all 0.3s ease",}}>
+      <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
+      <button onClick={toggleMode}> Toggle Dark Mode</button>
+    </div>
   );
 }
-export default App;
+export default App
