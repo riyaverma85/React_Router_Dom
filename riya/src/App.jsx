@@ -59,7 +59,6 @@ const App = () => {
   const handleClicked = () => {
     setDisplayText(inputValue);
   };
-
   return (
     <>
     <input type='text' value={name}onChange={handleClick}/>
@@ -68,5 +67,4 @@ const App = () => {
     </>
   )
 }
-
 export default App
