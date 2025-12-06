@@ -1,20 +1,20 @@
 //rafce
-import React, { useState } from 'react'
-import Navbar from './assets/Navbar';
-import Header from './assets/footer';
-import Img from'./assets/react.svg'
-import ClickMeButton from './assets/footer';
-const App = () => {
-let age=18;
-//  const[age,setAge]=useState("");
- const loadAge=()=>{
-    if(age>=18){
-      alert(" you vote")
-    }
-    else{
-      alert(" you note vote")
-    }
- }
+// import React, { useState } from 'react'
+// import Navbar from './assets/Navbar';
+// import Header from './assets/footer';
+// import Img from'./assets/react.svg'
+// import ClickMeButton from './assets/footer';
+// const App = () => {
+// let age=18;
+// //  const[age,setAge]=useState("");
+//  const loadAge=()=>{
+//     if(age>=18){
+//       alert(" you vote")
+//     }
+//     else{
+//       alert(" you note vote")
+//     }
+//  }
 //  const App = () => {
 //  const Riya=()=>{
 // let sum=0
@@ -35,17 +35,38 @@ let age=18;
 // export default App;
 
 //////////////////////location .href="form"dekhna he
+//   return (
+//     <div>
+//     {/* <Navbar/>
+//       <h1>Hello App</h1>
+//       {/* <input type="text" value={age} onChange={(e)=>setAge(e.target.value)}/> 
+//       <button onClick={loadAge} style={{color:"red"}}>Click Me</button><br/><br/>
+//     <img src={Img} alt="" />
+//     <Header/>
+//     <ClickMeButton/>
+//     <Footer2/> */}
+//     </div>
+//   )
+// }
+// export default App;
+
+import React, { useState } from 'react'
+const App = () => {
+  let [name,setname]=useState("")
+  let handleClick = (e) => {
+    setname(e.target.value)
+  }
+  const handleClicked = () => {
+    setDisplayText(inputValue);
+  };
+
   return (
-    <div>
-    {/* <Navbar/>
-      <h1>Hello App</h1>
-      {/* <input type="text" value={age} onChange={(e)=>setAge(e.target.value)}/> 
-      <button onClick={loadAge} style={{color:"red"}}>Click Me</button><br/><br/>
-    <img src={Img} alt="" />
-    <Header/>
-    <ClickMeButton/>
-    <Footer2/> */}
-    </div>
+    <>
+    <input type='text' value={name}onChange={handleClick}/>
+    <button onClick={handleClicked}>clicked</button>
+    <h2>{handleClicked}</h2>
+    </>
   )
 }
-export default App;
+
+export default App
