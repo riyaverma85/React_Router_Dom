@@ -50,21 +50,45 @@
 // }
 // export default App;
 
+// import React, { useState } from 'react'
+// const App = () => {
+//   let [name,setname]=useState("")
+//   let handleClick = (e) => {
+//     setname(e.target.value)
+//   }
+//   const handleClicked = () => {
+//     setDisplayText(inputValue);
+//   };
+//   return (
+//     <>
+//     <input type='text' value={name}onChange={handleClick}/>
+//     <button onClick={handleClicked}>clicked</button>
+//     <h2>{handleClicked}</h2>
+//     </>
+//   )
+// }
+// export default App
+///////////////   change font size use two buttons///////////////////////
+
 import React, { useState } from 'react'
 const App = () => {
-  let [name,setname]=useState("")
-  let handleClick = (e) => {
-    setname(e.target.value)
+  let [fontSize,setfontSize]=useState(16)
+  let increaseFont=()=>{
+    setfontSize(fontSize+2)
   }
-  const handleClicked = () => {
-    setDisplayText(inputValue);
-  };
+  let decreaseFont=()=>{
+    setfontSize(fontSize-2)
+  }
   return (
     <>
-    <input type='text' value={name}onChange={handleClick}/>
-    <button onClick={handleClicked}>clicked</button>
-    <h2>{handleClicked}</h2>
+    <p style={{fontSize: `${fontSize}px`}}>ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+
+    </p>
+  
+    <button onClick={increaseFont}>+</button>
+    <button onClick={decreaseFont}>-</button>
     </>
   )
 }
+
 export default App
