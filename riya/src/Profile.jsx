@@ -1,13 +1,13 @@
-import React from 'react'
-import img from "../src/download.jpg"
-const profile = ({name,img,city}) => {
+import React from "react";
+
+const Profile = ({ name, img, city }) => {
   return (
     <>
-    <img src={img} alt="" />
-    <h1>name is ={name}</h1>
-    <h1>city is ={city}</h1>
+      <img src={img} alt="" />
+      <h1>name is = {name}</h1>
+      <h1>city is = {city}</h1>
     </>
-  )
-}
+  );
+};
 
-export default profile
+export default Profile;

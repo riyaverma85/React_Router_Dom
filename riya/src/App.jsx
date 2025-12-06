@@ -105,15 +105,17 @@
 // export default App
 
 //////props pass img///////////////////////////////////////////
-
-import React from 'react'
+import React from "react";
+import Profile from "Profile.jsx";
+import img1 from "./assets/download.jpg";   
 
 const App = () => {
   return (
     <>
-    <Profile img={img} name="game"  city="Dubai"/> 
+      <h1>hello</h1>
+      <Profile img={img1} name="game" city="Dubai" />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
