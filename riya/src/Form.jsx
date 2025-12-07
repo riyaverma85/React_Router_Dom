@@ -31,7 +31,7 @@ const Hook = () => {
   // alert(`your name is ${name} and your age is${age} andyour email is ${email}`)
   // }
   let [form,setform]=useState({
-    myname:"",
+    name:"",
     age:"",
     email:"",
     password:""
@@ -50,7 +50,7 @@ const Hook = () => {
     <div style={{ backgroundColor:"pink", textAlign:"center", border:"solid 1px black", width:"400px", margin:"auto", marginTop:"50px", }}>
     <h1 style={{color:"blue"}}>form heandling</h1>
     <form onSubmit={handleSubmit}  >
-Enter your Name<input type='text 'name='myname' value={form.name} onChange={handleChange}/><br/>
+Enter your Name<input type='text 'name='name' value={form.name} onChange={handleChange}/><br/>
 Enter your Age<input type='text'name='age' value={form.age} onChange={handleChange}/><br/>
 Enter your Email<input type='text'name='email' value={form.email} onChange={handleChange}/><br/>
 Enter password<input type='text'name='password' value={form.password} onChange={handleChange} /><br/>

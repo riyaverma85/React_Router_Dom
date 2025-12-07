@@ -105,20 +105,22 @@
 // export default App
 
 //////props pass img///////////////////////////////////////////
-// import React from "react";
-// import Profile from "Profile.jsx";
-// import img1 from "./assets/download.jpg";   
 
-// const App = () => {
-//   return (
-//     <>
-//       <h1>hello</h1>
-//       <Profile img={img1} name="game" city="Dubai" />
-//     </>
-//   );
-// };
 
-// export default App;
+
+import React from "react";
+import Profile from "Profile.jsx";
+import img1 from "./assets/download.jpg";   
+const App = () => {
+  return (
+    <>
+      <h1>hello</h1>
+      <Profile img={img1} name="game" city="Dubai" />
+    </>
+  );
+};
+export default App;
+
 
 ///////////////////////////////////////////////////
 
@@ -142,24 +144,24 @@
 // export default App;
 /////////////////////////////////////////////////////////////////
 
-import React, { useState } from "react";
-function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleMode = () => {
-    setDarkMode(!darkMode);
-  }
-  return (
-    <div style={{backgroundColor: darkMode ? "black" : "white",
-    color: darkMode ? "white" : "black",
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    transition: "all 0.3s ease",}}>
-      <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
-      <button onClick={toggleMode}> Toggle Dark Mode</button>
-    </div>
-  );
-}
-export default App
+// import React, { useState } from "react";
+// function App() {
+//   const [darkMode, setDarkMode] = useState(false);
+//   const toggleMode = () => {
+//     setDarkMode(!darkMode);
+//   }
+//   return (
+//     <div style={{backgroundColor: darkMode ? "black" : "white",
+//     color: darkMode ? "white" : "black",
+//     minHeight: "100vh",
+//     display: "flex",
+//     flexDirection: "column",
+//     alignItems: "center",
+//     justifyContent: "center",
+//     transition: "all 0.3s ease",}}>
+//       <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
+//       <button onClick={toggleMode}> Toggle Dark Mode</button>
+//     </div>
+//   );
+// }
+// export default App
