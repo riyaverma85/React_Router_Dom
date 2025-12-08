@@ -1,11 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Layout from './layout'
 import Home from './assets/Home'
 import About from './assets/About'
 import Service from './assets/Service'
 import Contect from './assets/Contect'
-import Layout from './layout'
+import Layout from './Layout'
 const App = () => {
   return (
     <>
