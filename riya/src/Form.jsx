@@ -41,7 +41,7 @@ const Hook = () => {
   }
   let handleSubmit=(e)=>{
     e.preventDefault()
-    if(form.name.trim() == ""){
+    if(form.name.trim()== ""){
       alert("password is required.")
     }
   }
