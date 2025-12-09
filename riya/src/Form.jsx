@@ -61,6 +61,7 @@ const Hook = () => {
   }
   return (
     <>
+    <h1>Fill form and singUp</h1>
     <div style={{ backgroundColor:"pink", textAlign:"center", border:"solid 1px black", width:"400px", margin:"auto", marginTop:"50px", }}>
     <h1 style={{color:"blue"}}>form heandling</h1>
     <form onSubmit={handleSubmit}  >
