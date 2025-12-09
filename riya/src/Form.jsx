@@ -48,6 +48,9 @@ const Hook = () => {
       valid=false;
     }
     else if(form.age.trim()==""){
+      alert("age is required.")
+      valid=false;
+    }
   }
   return (
     <>
