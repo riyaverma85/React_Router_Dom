@@ -56,6 +56,7 @@ const Hook = () => {
       localStorage.setItem("name",form.name)
       localStorage.setItem("age",form.age)
       localStorage.setItem("email",form.email)
+      navigate("/login")
     }
   }
   return (
