@@ -52,7 +52,7 @@ const Hook = () => {
       valid=false;
     }
     if(valid){
-      
+      alert("sinup successful")
     }
   }
   return (
