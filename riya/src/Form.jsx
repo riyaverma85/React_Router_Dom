@@ -47,6 +47,7 @@ const Hook = () => {
       alert("password is required.")
       valid=false;
     }
+    else if(form.age.trim()==""){
   }
   return (
     <>
