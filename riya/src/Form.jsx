@@ -55,6 +55,7 @@ const Hook = () => {
       alert("sinup successful")
       localStorage.setItem("name",form.name)
       localStorage.setItem("age",form.age)
+      localStorage.setItem("email",form.email)
     }
   }
   return (
