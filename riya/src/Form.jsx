@@ -53,6 +53,7 @@ const Hook = () => {
     }
     if(valid){
       alert("sinup successful")
+      localStorage.setItem("formdata",JSON.stringify(form))
     }
   }
   return (
