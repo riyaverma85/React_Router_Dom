@@ -1,5 +1,4 @@
  import React from 'react'
- 
  const Map = () => {
     // let MyData=["riya","soni","kumar","singh"]
     let Data=[
