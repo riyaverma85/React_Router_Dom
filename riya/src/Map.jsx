@@ -2,7 +2,6 @@
  
  const Map = () => {
     // let MyData=["riya","soni","kumar","singh"]
-
     let Data=[
         {id:1,name:"Riya verma",age:22},
         {id:2,name:" Akanchha soni",age:21},
