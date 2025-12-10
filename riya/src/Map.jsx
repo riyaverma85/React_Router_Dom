@@ -4,17 +4,17 @@
     // let MyData=["riya","soni","kumar","singh"]
 
     let Data=[
-        {id:1,name:"riya",age:22},
-        {id:2,name:"soni",age:21},
-        {id:3,name:"kumar",age:23},
+        {id:1,name:"riya verma",age:22},
+        {id:2,name:" akanchha soni",age:21},
+        {id:3,name:"rohit kumar",age:23},
     ]
    return (
      <>
      <h1>Map</h1>
- {Data.map((e)=>(
-     <div key={e.id}>
-              <h1>{e.name}</h1>
-              <p>{e.age}</p>
+ {Data.map((r)=>(
+     <div key={r.id}>
+              <h1>{r.name}</h1>
+              <p>{r.age}</p>
      </div>  
     ))}
      </>
