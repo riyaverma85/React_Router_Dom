@@ -4,7 +4,7 @@
     // let MyData=["riya","soni","kumar","singh"]
 
     let Data=[
-        {id:1,name:"riya verma",age:22},
+        {id:1,name:"Riya verma",age:22},
         {id:2,name:" akanchha soni",age:21},
         {id:3,name:"rohit kumar",age:23},
     ]
