@@ -10,7 +10,7 @@ const Searchbar = () => {
     })
   return (
     <>
-    <h1>Map to use searching</h1>
+    <h1>Map to use searching bar</h1>
     Search<input type='text'value={search} onChange={(e)=>{setsearch(e.target.value)}}/>
     <ul>
         {FilterData.map((e,i)=>(<li key={i}>{e}</li>))}
