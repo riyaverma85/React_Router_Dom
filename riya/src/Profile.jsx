@@ -9,5 +9,4 @@ const Profile = ({  img,name, city }) => {
     </>
   )
 }
-
 export default Profile;
