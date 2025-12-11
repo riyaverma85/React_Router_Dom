@@ -3,7 +3,6 @@ import Child from './Child';
 
 
 const App = () => {
-
   return (
     <>
     <h1>home page</h1>
