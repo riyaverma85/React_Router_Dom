@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 const Searchbar = () => {
     let [search,setsearch]=useState("")
     let MyData=["riya","soni","kumar","singh","aman","rahul","rohit","ankit"]
-
     let FilterData=MyData.filter((e)=>{
         return e.toLowerCase().includes(search.toLowerCase())
     })
