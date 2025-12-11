@@ -11,7 +11,7 @@
      <h1>Map method</h1>
  {Data.map((r)=>(
      <div key={r.id}>
-              <h1>{r.name}</h1>
+          <h1>{r.name}</h1>
               <p>{r.age}</p>
      </div>  
     ))}
