@@ -5,7 +5,7 @@ const Profile = ({  img,name, city }) => {
     <>
       <h1>{img}</h1>
       <h1>Name is = {name}</h1>
-      <h1>city is = {city}</h1>
+      <h1>City is = {city}</h1>
     </>
   )
 }
