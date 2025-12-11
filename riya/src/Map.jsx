@@ -12,7 +12,7 @@
  {Data.map((r)=>(
      <div key={r.id}>
           <h1>{r.name}</h1>
-              <p>{r.age}</p>
+           <p>{r.age}</p>
      </div>  
     ))}
      </>
