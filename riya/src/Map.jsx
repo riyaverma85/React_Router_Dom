@@ -52,6 +52,8 @@
 //   )
 // }
 // export default Map
+
+
 const Map=()=>{
   let Data=[
     { name:"samosa" ,prize:12 ,location:"parihar"},
