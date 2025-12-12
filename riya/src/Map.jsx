@@ -36,6 +36,7 @@ const Map=()=>{
     {id:1,name:"Riya Verma",age:18}
     ,{id:2,name:"Ravina wagmare",age:18},
     {id:3,name:"Akash barasia",age:24},
+    {}
   ]
   return(
     <>
