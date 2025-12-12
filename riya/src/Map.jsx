@@ -64,6 +64,8 @@ const Map=()=>{
     {Data.map((i)=>(
       <div key= {i}>
        <h1>{i.name}</h1>
+       <p>{i.prize}</p>
+       <p>{i.location}</p>
       </div>
     )
 
