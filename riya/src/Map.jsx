@@ -31,23 +31,33 @@
 
 
 
+// const Map=()=>{
+//   let Data=[
+//     {id:1,name:"Riya Verma",age:18}
+//     ,{id:2,name:"Ravina wagmare",age:18},
+//     {id:3,name:"Akash barasia",age:24},
+//     {id:4,name:"Gayatri kalmbe",age:19}
+//   ]
+//   return(
+//     <>
+//     { Data.map((i)=>(
+//       <div key={i.id}>
+//     <h1>{i.name}</h1>
+//     <p>{i.age}</p>
+//     </div>
+//     )
+//   )
+// }
+//     </>
+//   )
+// }
+// export default Map
+
+
 const Map=()=>{
-  let Data=[
-    {id:1,name:"Riya Verma",age:18}
-    ,{id:2,name:"Ravina wagmare",age:18},
-    {id:3,name:"Akash barasia",age:24},
-    {id:4,name:"Gayatri kalmbe",age:19}
-  ]
   return(
     <>
-    { Data.map((i)=>(
-      <div key={i.id}>
-    <h1>{i.name}</h1>
-    <p>{i.age}</p>
-    </div>
-    )
-  )
-}
+    
     </>
   )
 }
