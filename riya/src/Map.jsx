@@ -60,11 +60,13 @@ const Map=()=>{
     { Name:"samosa" ,prize:12 ,location:"parihar"},
     {name:"kachori",prize:14, location:"millan M.P nager"},
     {name:"panipuri", prize:10,location:"manpdi"},
-    
+
   ]
   return(
     <>
-
+      <div>
+        
+      </div>
     </>
   )
 }
