@@ -52,10 +52,7 @@
 //   )
 // }
 // export default Map
-
-
 const Map=()=>{
-
   let Data=[
     { Name:"samosa" ,prize:12 ,location:"parihar"},
     {name:"kachori",prize:14, location:"millan M.P nager"},
@@ -64,9 +61,13 @@ const Map=()=>{
   ]
   return(
     <>
-      <div>
-        
+    {Data.map((i)=>(
+      <div key= {i}>
+       <h1>{i.name}</h1>
       </div>
+    )
+
+    )}
     </>
   )
 }
