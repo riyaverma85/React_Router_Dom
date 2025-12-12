@@ -34,6 +34,7 @@
 const Map=()=>{
   let Data=[
     {id:1,name:"Riya Verma",age:18}
+    ,{}
   ]
   return(
     <>
