@@ -55,9 +55,14 @@
 
 
 const Map=()=>{
+
+  let Data=[
+    { Name:"samosa" ,prize:12 ,location:"parihar"},
+    
+  ]
   return(
     <>
-    
+
     </>
   )
 }
