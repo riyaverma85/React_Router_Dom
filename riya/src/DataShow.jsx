@@ -11,7 +11,7 @@ const DataShow = () => {
   })
   return (
     <>
-    <h1>Helloo conect </h1>
+    <h1>Helloo connect </h1>
     
     </>
   )
