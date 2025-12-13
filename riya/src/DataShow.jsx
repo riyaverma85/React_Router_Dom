@@ -11,7 +11,7 @@ const DataShow = () => {
   })
   return (
     <>
-    <h1>Helloo i try to connect  Api please cheack to </h1>
+    <h1>Helloo i try to connect  Api please cheack to console </h1>
     
     </>
   )
