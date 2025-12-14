@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const DataShow = () => {
+  let[useData,setuseData]=useState([])
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
@@ -13,7 +14,34 @@ const DataShow = () => {
 
   return (
     <>
+
+
       <h1>Helloo</h1>
+
+      <table >
+        <thead>
+            <tr>
+              <th>Name</th>
+              <th>age</th>
+              <th>cheackin</th>
+              <th>cheackout</th>
+              <th>roomno</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+           {useData.map((e)=>{
+          <tr>
+            <td>{e.name}</td>
+             <td>{e.age}</td>
+              <td>{e.cheackin}</td>
+               <td>{e.cheackout}</td>
+                <td>{e.roomno}</td>
+          </tr>
+              })}
+        </tbody>
+      
+      </table>
     </>
   );
 }
