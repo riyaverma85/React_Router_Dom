@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+ import axios from 'axios';
+ import React, { useEffect, useState } from 'react';
 
 const DataShow = () => {
-  let[useData,setuseData]=useState([])
+  let[Data,setData]=useState([])
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
         console.log(res.data);
-        setuseData(res.data)
-      }).catch((err) => {
+        setData(res.data)
+      })
+      .catch((err) => {
         console.log("Error", err);
       });
   }, []); 
@@ -30,7 +31,7 @@ const DataShow = () => {
        
         <tbody>
            {Data.map((e)=>{
-          <tr>
+          <tr key={e.id}>
             <td>{e.name}</td>
              <td>{e.age}</td>
               <td>{e.cheackin}</td>
