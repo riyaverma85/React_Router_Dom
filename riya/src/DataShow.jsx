@@ -7,6 +7,7 @@ const DataShow = () => {
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
         console.log(res.data);
+        setuseData(res.data)
       }).catch((err) => {
         console.log("Error", err);
       });
@@ -14,11 +15,9 @@ const DataShow = () => {
 
   return (
     <>
-
-
       <h1>Helloo</h1>
 
-      <table >
+      <table border={2} >
         <thead>
             <tr>
               <th>Name</th>
@@ -30,7 +29,7 @@ const DataShow = () => {
         </thead>
        
         <tbody>
-           {useData.map((e)=>{
+           {Data.map((e)=>{
           <tr>
             <td>{e.name}</td>
              <td>{e.age}</td>
@@ -40,7 +39,6 @@ const DataShow = () => {
           </tr>
               })}
         </tbody>
-      
       </table>
     </>
   );
