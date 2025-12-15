@@ -1,7 +1,7 @@
  import axios from 'axios';
  import React, { useEffect, useState } from 'react';
 
-const DataShow = () => {
+const App = () => {
   let[Data,setData]=useState([])
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
@@ -30,7 +30,7 @@ const DataShow = () => {
         </thead>
        
         <tbody>
-           {Data.map((e)=>{
+           {Data.map((e)=>(
           <tr key={e.id}>
             <td>{e.name}</td>
              <td>{e.age}</td>
@@ -38,10 +38,10 @@ const DataShow = () => {
                <td>{e.cheackout}</td>
                 <td>{e.roomno}</td>
           </tr>
-              })}
+              ))}
         </tbody>
       </table>
     </>
   );
 }
-export default DataShow;
+export default App;
