@@ -23,6 +23,13 @@
     "cheackin":"25-12-2025",
     "cheackout":"29-12-2025",
     "roomno":103
+},
+{
+    "name":"vivek",
+    "age":15,
+    "cheackin":"20-10-2025",
+    "cheackout":"25-10-2025",
+    "roomno":104
 }
     ]
 }
