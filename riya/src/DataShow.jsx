@@ -26,17 +26,19 @@ const App = () => {
               <th>cheackin</th>
               <th>cheackout</th>
               <th>roomno</th>
+              <th>Delete</th>
             </tr>
         </thead>
        
         <tbody>
            {Data.map((e)=>(
-          <tr key={e.id}>
+         <tr>
             <td>{e.name}</td>
              <td>{e.age}</td>
               <td>{e.cheackin}</td>
                <td>{e.cheackout}</td>
                 <td>{e.roomno}</td>
+                <td></td>
           </tr>
               ))}
         </tbody>
