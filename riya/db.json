@@ -1,35 +1,28 @@
 {
-    "Hotel":[
-
-{
-"name":"riya",
-"age":18,
-"cheackin":"25-12-2025",
-"cheackout":"28-12-2025",
-"roomno":101
-}
-,
-{
-   "name" :"shivani",
-   "age":20,
-   "cheackin":"20-12-2025",
-   "cheackout":"25-12-2025",
-   "roomno":102
-}
-,
-{
-    "name":"niharika",
-    "age":25,
-    "cheackin":"25-12-2025",
-    "cheackout":"29-12-2025",
-    "roomno":103
-},
-{
-    "name":"vivek",
-    "age":15,
-    "cheackin":"20-10-2025",
-    "cheackout":"25-10-2025",
-    "roomno":104
-}
-    ]
+  "Hotel": [
+    {
+      "name": "shivani",
+      "age": 20,
+      "cheackin": "20-12-2025",
+      "cheackout": "25-12-2025",
+      "roomno": 102,
+      "id": "4923"
+    },
+    {
+      "name": "niharika",
+      "age": 25,
+      "cheackin": "25-12-2025",
+      "cheackout": "29-12-2025",
+      "roomno": 103,
+      "id": "e9d5"
+    },
+    {
+      "name": "vivek",
+      "age": 15,
+      "cheackin": "20-10-2025",
+      "cheackout": "25-10-2025",
+      "roomno": 104,
+      "id": "0f0f"
+    }
+  ]
 }

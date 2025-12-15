@@ -13,6 +13,12 @@ const App = () => {
         console.log("Error", err);
       });
   }, []); 
+  let DataDelete=(id)=>{
+    let api = `http://localhost:3000/Hotel/${id}`;  
+      axios.delete(api).then(()=>(
+        alert("data deleted")
+      ))
+  }
 
   return (
     <>
@@ -38,7 +44,7 @@ const App = () => {
               <td>{e.cheackin}</td>
                <td>{e.cheackout}</td>
                 <td>{e.roomno}</td>
-                <td></td>
+                <td onClick={()=>(DataDelete(e.id))}> delete</td>
           </tr>
               ))}
         </tbody>
