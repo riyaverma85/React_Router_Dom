@@ -1,6 +1,14 @@
 {
   "Hotel": [
     {
+"name":"Riya",
+"age":19,
+"cheackin":"20-10-2025",
+"cheackout":"25-10-2025",
+"roomno":101
+    }
+    ,
+    {
       "name": "Shivani",
       "age": 20,
       "cheackin": "20-12-2025",
