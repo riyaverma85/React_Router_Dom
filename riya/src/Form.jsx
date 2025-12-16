@@ -20,9 +20,9 @@
 // export default Form
 
 ///////////////////////////////////////////////
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-const Hook = () => {
+// const Hook = () => {
   // let [name,setname]=useState("")
   // let[age,setage]=useState("")
   // let [email,setemail]=useState("")
@@ -30,6 +30,9 @@ const Hook = () => {
   //   e.preventDefault()
   // alert(`your name is ${name} and your age is${age} andyour email is ${email}`)
   // }
+  import React, { useState } from 'react'
+
+const App = () => {
   let [form,setform]=useState({
     name:"",
     age:"",
@@ -75,4 +78,4 @@ Enter password<input type='text'name='password' value={form.password} onChange={
     </>
   )
 }
-export default Hook
+export default App
