@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Sing_Up = () => {
+    let[name,setname]=useState;
+    let Name
   return (
     <>
     <form>
-Enter your Name<input/>
-Enter your Email<input/>
-Enter your Password<input/>
+Enter your Name<input type='text' name='Name'/><br/>
+Enter your Email<input type='text' name='Email'/><br/>
+Enter your Password<input type='text' name='password'/><br/>
+<button>save</button>
     </form>
     
     </>
