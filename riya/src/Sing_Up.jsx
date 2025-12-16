@@ -1,7 +1,15 @@
 import React, { useState } from 'react'
 
 const Sing_Up = () => {
-    let[name,setname]=useState;
+    let[name,setname]=useState({
+        name:"",
+        emai:"",
+        password:""
+
+    })
+    let Change=(e)=>{
+        setname({...form,[e.target.name]:e.target.value})
+    }
     let Name
   return (
     <>
