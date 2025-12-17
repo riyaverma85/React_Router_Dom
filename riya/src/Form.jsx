@@ -83,7 +83,7 @@
 
 import React, { useState } from 'react'
 
-const Form = () => {
+const App = () => {
   let[form,setform]=useState({
     name:"",
     age:"",
@@ -95,10 +95,26 @@ const Form = () => {
   let handlechange=(e)=>{
     setform({...form,[e.target.name]:e.target.value})
   }
+  let Handlesubmit=(e)=>{
+    e.preventDefault();
+     let valid=true;
+
+     if(form.name.trim()==""){
+      alert("name cannot be empty")
+      valid=false
+     }
+     else if(form.adharnumber.trim()==""){
+      alert("plese enter nunber")
+      valid=false
+     }
+     if(valid){
+      let api
+     }
+  }
   return (
     <>
     <h1>Form Hendling</h1>
-    <form>
+    <form onSubmit={Handlesubmit}>
       Enter Name:<input type='text'name='name'value={form.name} onChange={handlechange}/>
       Enter Age:<input type='text' name='age'value={form.age} onChange={handlechange}/>
       Enter Aadharnumber:<input type='text' name='aadharnumber'value={form.adharnumber} onChange={handlechange}/>
@@ -116,4 +132,4 @@ Cheackout:<input type='text' value={form.cheackout} onChange={handlechange}>Chea
   )
 }
 
-export default Form
+export default App
