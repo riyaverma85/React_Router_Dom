@@ -81,23 +81,36 @@
 // export default App
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
 const Form = () => {
+  let[form,setform]=useState({
+    name:"",
+    age:"",
+    aadharnumber:"",
+    city:"",
+    Cheackin:"",
+    cheackout:""
+  })
+  let handlechange=(e)=>{
+    setform({...form,[e.target.name]:e.target.value})
+  }
   return (
     <>
     <h1>Form Hendling</h1>
     <form>
-      Enter Name:<input type='text'name='name'value={form.name}/>
-      Enter Age:<input type='text' name='age'value={form.age}/>
-      Enter Aadharnumber:<input type='text' name='aadharnumber'value={form.adharnumber}/>
+      Enter Name:<input type='text'name='name'value={form.name} onChange={handlechange}/>
+      Enter Age:<input type='text' name='age'value={form.age} onChange={handlechange}/>
+      Enter Aadharnumber:<input type='text' name='aadharnumber'value={form.adharnumber} onChange={handlechange}/>
 Select City:
-<select name='City' value={form.city}>
+<select name='City' value={form.city} onChange={handlechange}>
   <option value="Bhopal">Bhopal</option>
   <option value="sehore">Sehore</option>
   <option value="indore">indore</option>
   <option value="delhi">Delhi</option>
 </select>
+Cheackin:<input type='text' value={form.Cheackin} onChange={handlechange}>Cheackin</input>
+Cheackout:<input type='text' value={form.cheackout} onChange={handlechange}>Cheackout</input>
     </form>
     </>
   )
