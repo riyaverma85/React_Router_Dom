@@ -81,6 +81,7 @@
 // export default App
 
 
+import axios from 'axios'
 import React, { useState } from 'react'
 
 const App = () => {
@@ -107,9 +108,7 @@ const App = () => {
       alert("plese enter nunber")
       valid=false
      }
-     if(valid){
-      let api
-     }
+     
   }
   return (
     <>
