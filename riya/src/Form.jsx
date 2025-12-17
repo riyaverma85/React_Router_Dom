@@ -30,52 +30,71 @@
   //   e.preventDefault()
   // alert(`your name is ${name} and your age is${age} andyour email is ${email}`)
   // }
-  import React, { useState } from 'react'
+//   import React, { useState } from 'react'
 
-const App = () => {
-  let [form,setform]=useState({
-    name:"",
-    age:"",
-    email:"",
-    password:""
-  })
-  let handleChange=(e)=>{
-    setform({...form,[e.target.name]:e.target.value})
-  }
-  let handleSubmit=(e)=>{
-    e.preventDefault()
-    let valid=true;
+// const App = () => {
+//   let [form,setform]=useState({
+//     name:"",
+//     age:"",
+//     email:"",
+//     password:""
+//   })
+//   let handleChange=(e)=>{
+//     setform({...form,[e.target.name]:e.target.value})
+//   }
+//   let handleSubmit=(e)=>{
+//     e.preventDefault()
+//     let valid=true;
 
-    if(form.name.trim()==""){
-      alert("password is required.")
-      valid=false;
-    }
-    else if(form.age.trim()==""){
-      alert("age is required.")
-      valid=false;
-    }
-    if(valid){
-      alert("sinup successful")
-      localStorage.setItem("name",form.name)
-      localStorage.setItem("age",form.age)
-      localStorage.setItem("email",form.email)
-      navigate("/login")
-    }
-  }
+//     if(form.name.trim()==""){
+//       alert("password is required.")
+//       valid=false;
+//     }
+//     else if(form.age.trim()==""){
+//       alert("age is required.")
+//       valid=false;
+//     }
+//     if(valid){
+//       alert("sinup successful")
+//       localStorage.setItem("name",form.name)
+//       localStorage.setItem("age",form.age)
+//       localStorage.setItem("email",form.email)
+//       navigate("/login")
+//     }
+//   }
+//   return (
+//     <>
+//     <h1>Fill form and singUp</h1>
+//     <div style={{ backgroundColor:"pink", textAlign:"center", border:"solid 1px black", width:"400px", margin:"auto", marginTop:"50px", }}>
+//     <h1 style={{color:"blue"}}>form heandling</h1>
+//     <form onSubmit={handleSubmit}  >
+// Enter your Name<input type='text 'name='name' value={form.name} onChange={handleChange}/><br/>
+// Enter your Age<input type='text'name='age' value={form.age} onChange={handleChange}/><br/>
+// Enter your Email<input type='text'name='email' value={form.email} onChange={handleChange}/><br/>
+// Enter password<input type='text'name='password' value={form.password} onChange={handleChange} /><br/>
+// <button type='submit'>shave Data</button>
+//     </form>
+//     </div>
+//     </>
+//   )
+// }
+// export default App
+
+
+import React from 'react'
+
+const Form = () => {
   return (
     <>
-    <h1>Fill form and singUp</h1>
-    <div style={{ backgroundColor:"pink", textAlign:"center", border:"solid 1px black", width:"400px", margin:"auto", marginTop:"50px", }}>
-    <h1 style={{color:"blue"}}>form heandling</h1>
-    <form onSubmit={handleSubmit}  >
-Enter your Name<input type='text 'name='name' value={form.name} onChange={handleChange}/><br/>
-Enter your Age<input type='text'name='age' value={form.age} onChange={handleChange}/><br/>
-Enter your Email<input type='text'name='email' value={form.email} onChange={handleChange}/><br/>
-Enter password<input type='text'name='password' value={form.password} onChange={handleChange} /><br/>
-<button type='submit'>shave Data</button>
+    <h1>Form Hendling</h1>
+    <form>
+      Enter Name:<input/>
+      Enter Age:<input/>
+      Enter Aadharnumber:<input/>
+      
     </form>
-    </div>
     </>
   )
 }
-export default App
+
+export default Form
