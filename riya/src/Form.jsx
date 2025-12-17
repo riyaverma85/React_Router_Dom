@@ -88,10 +88,10 @@ const Form = () => {
     <>
     <h1>Form Hendling</h1>
     <form>
-      Enter Name:<input/>
-      Enter Age:<input/>
-      Enter Aadharnumber:<input/>
-      
+      Enter Name:<input type='text'/>
+      Enter Age:<input type='text'/>
+      Enter Aadharnumber:<input type='text'/>
+
     </form>
     </>
   )
