@@ -1,20 +1,12 @@
 {
   "Hotel": [
     {
-"name":"Riya",
-"age":19,
-"cheackin":"10-11-2025",
-"cheackout":"15-11-2025",
-"roomno":101
-    }
-    ,
-    {
-      "name": "Shivani",
-      "age": 20,
-      "cheackin": "20-12-2025",
-      "cheackout": "25-12-2025",
-      "roomno": 102,
-      "id": "4923"
+      "name": "Riya",
+      "age": 19,
+      "cheackin": "10-11-2025",
+      "cheackout": "15-11-2025",
+      "roomno": 101,
+      "id": "5f7f"
     },
     {
       "name": "Niharika",
@@ -31,6 +23,16 @@
       "cheackout": "25-10-2025",
       "roomno": 104,
       "id": "0f0f"
+    },
+    {
+      "id": "d626",
+      "name": "shivani",
+      "age": "22",
+      "aadharnumber": "1234567899",
+      "city": "",
+      "Cheackin": "2025-12-09",
+      "cheackout": "2025-12-25",
+      "person": 500
     }
   ]
 }

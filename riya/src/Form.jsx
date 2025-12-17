@@ -81,6 +81,7 @@
 // export default App
 
 
+import axios from 'axios'
 import React, { useState } from 'react'
 
 const App = () => {
@@ -110,7 +111,9 @@ const App = () => {
     }
     if(valid){
         let api = "http://localhost:3000/Hotel";  
-        
+        axios.post(api,{...form,person:500}).then((res)=>{
+          alert("Data submited")
+        })
     }
   }
 
