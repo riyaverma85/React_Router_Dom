@@ -108,7 +108,12 @@ const App = () => {
       alert("Please enter number")
       valid = false
     }
+    if(valid){
+        let api = "http://localhost:3000/Hotel";  
+        
+    }
   }
+
 
   return (
     <>
