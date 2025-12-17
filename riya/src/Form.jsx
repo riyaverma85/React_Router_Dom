@@ -81,52 +81,64 @@
 // export default App
 
 
-import axios from 'axios'
 import React, { useState } from 'react'
 
 const App = () => {
-  let[form,setform]=useState({
-    name:"",
-    age:"",
-    aadharnumber:"",
-    city:"",
-    Cheackin:"",
-    cheackout:""
+  let [form, setform] = useState({
+    name: "",
+    age: "",
+    aadharnumber: "",
+    city: "",
+    Cheackin: "",
+    cheackout: ""
   })
-  let handlechange=(e)=>{
-    setform({...form,[e.target.name]:e.target.value})
-  }
-  let Handlesubmit=(e)=>{
-    e.preventDefault();
-     let valid=true;
 
-     if(form.name.trim()==""){
-      alert("name cannot be empty")
-      valid=false
-     }
-     else if(form.adharnumber.trim()==""){
-      alert("plese enter nunber")
-      valid=false
-     }
-     
+  let handlechange = (e) => {
+    setform({ ...form, [e.target.name]: e.target.value })
   }
+
+  let Handlesubmit = (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    if (form.name.trim() === "") {
+      alert("Name cannot be empty")
+      valid = false
+    } else if (form.aadharnumber.trim() === "") {
+      alert("Please enter number")
+      valid = false
+    }
+  }
+
   return (
     <>
-    <h1>Form Hendling</h1>
-    <form onSubmit={Handlesubmit}>
-      Enter Name:<input type='text'name='name'value={form.name} onChange={handlechange}/>
-      Enter Age:<input type='text' name='age'value={form.age} onChange={handlechange}/>
-      Enter Aadharnumber:<input type='text' name='aadharnumber'value={form.adharnumber} onChange={handlechange}/>
-Select City:
-<select name='City' value={form.city} onChange={handlechange}>
-  <option value="Bhopal">Bhopal</option>
-  <option value="sehore">Sehore</option>
-  <option value="indore">indore</option>
-  <option value="delhi">Delhi</option>
-</select>
-Cheackin:<input type='text' value={form.Cheackin} onChange={handlechange}>Cheackin</input>
-Cheackout:<input type='text' value={form.cheackout} onChange={handlechange}>Cheackout</input>
-    </form>
+      <h1>Form Handling</h1>
+      <form onSubmit={Handlesubmit}>
+        Enter Name:
+        <input type='text' name='name' value={form.name} onChange={handlechange} /><br/>
+
+        Enter Age:
+        <input type='text' name='age' value={form.age} onChange={handlechange} /><br/>
+
+        Enter Aadharnumber:
+        <input type='text' name='aadharnumber' value={form.aadharnumber} onChange={handlechange} /><br/>
+
+        Select City:
+        <select name='city' value={form.city} onChange={handlechange}>
+          <option value="Bhopal">Bhopal</option>
+          <option value="sehore">Sehore</option>
+          <option value="indore">Indore</option>
+          <option value="delhi">Delhi</option>
+        </select><br/>
+
+        Cheackin:
+        <input type='date' name='Cheackin'  value={form.Cheackin} onChange={handlechange} /><br/>
+
+        Cheackout:
+        <input type='date' name='cheackout' value={form.cheackout} onChange={handlechange} /><br/>
+
+        <button type="submit">Submit</button>
+      </form>
     </>
   )
 }
