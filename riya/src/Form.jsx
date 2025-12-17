@@ -88,11 +88,11 @@ const Form = () => {
     <>
     <h1>Form Hendling</h1>
     <form>
-      Enter Name:<input type='text'name='name'/>
-      Enter Age:<input type='text' name='age'/>
-      Enter Aadharnumber:<input type='text' name='aadharnumber'/>
+      Enter Name:<input type='text'name='name'value={form.name}/>
+      Enter Age:<input type='text' name='age'value={form.age}/>
+      Enter Aadharnumber:<input type='text' name='aadharnumber'value={form.adharnumber}/>
 Select City:
-<select >
+<select name='City' value={form.city}>
   <option value="Bhopal">Bhopal</option>
   <option value="sehore">Sehore</option>
   <option value="indore">indore</option>
