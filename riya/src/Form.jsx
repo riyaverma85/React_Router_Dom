@@ -117,17 +117,14 @@ const App = () => {
     }
   }
 
-
   return (
     <>
       <h1>Form Handling</h1>
       <form onSubmit={Handlesubmit}>
         Enter Name:
         <input type='text' name='name' value={form.name} onChange={handlechange} /><br/>
-
         Enter Age:
         <input type='text' name='age' value={form.age} onChange={handlechange} /><br/>
-
         Enter Aadharnumber:
         <input type='text' name='aadharnumber' value={form.aadharnumber} onChange={handlechange} /><br/>
         people:<input type='text' name='people' value={form.people} onChange={handlechange}/><br/>
@@ -141,14 +138,11 @@ const App = () => {
 
         Cheackin:
         <input type='date' name='Cheackin'  value={form.Cheackin} onChange={handlechange} /><br/>
-
         Cheackout:
         <input type='date' name='cheackout' value={form.cheackout} onChange={handlechange} /><br/>
-
         <button type="submit">Submit</button>
       </form>
     </>
   )
 }
-
 export default App
