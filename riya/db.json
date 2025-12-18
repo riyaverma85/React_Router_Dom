@@ -33,6 +33,16 @@
       "Cheackin": "2025-12-09",
       "cheackout": "2025-12-25",
       "person": 500
+    },
+    {
+      "id": "12c7",
+      "name": "fff",
+      "age": "10",
+      "aadharnumber": "54321123",
+      "city": "delhi",
+      "Cheackin": "2025-12-10",
+      "cheackout": "2025-12-11",
+      "person": 500
     }
   ]
 }

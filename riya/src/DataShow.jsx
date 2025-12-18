@@ -31,7 +31,8 @@ const App = () => {
               <th>age</th>
               <th>cheackin</th>
               <th>cheackout</th>
-              <th>roomno</th>
+              <th>aadharnumber</th>
+              <th>people</th>
               <th>Delete</th>
             </tr>
         </thead>
@@ -43,7 +44,9 @@ const App = () => {
              <td>{e.age}</td>
               <td>{e.cheackin}</td>
                <td>{e.cheackout}</td>
-                <td>{e.roomno}</td>
+                <td>{e.aadharnumber}</td>
+                <td>{e.people}</td>
+                <td>{e.people*e.person}</td>
                 <td onClick={()=>(DataDelete(e.id))}> delete</td>
           </tr>
               ))}
