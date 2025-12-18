@@ -121,8 +121,7 @@ const App = () => {
     <>
       <h1>Form Handling</h1>
       <form onSubmit={Handlesubmit}>
-        Enter Name:
-        <input type='text' name='name' value={form.name} onChange={handlechange} /><br/>
+        Enter Name:<input type='text' name='name' value={form.name} onChange={handlechange} /><br/>
         Enter Age:
         <input type='text' name='age' value={form.age} onChange={handlechange} /><br/>
         Enter Aadharnumber:
