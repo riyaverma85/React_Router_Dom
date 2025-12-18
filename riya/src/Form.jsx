@@ -128,8 +128,7 @@ const App = () => {
         Enter Aadharnumber:
         <input type='text' name='aadharnumber' value={form.aadharnumber} onChange={handlechange} /><br/>
         people:<input type='text' name='people' value={form.people} onChange={handlechange}/><br/>
-        Select City:
-        <select name='city' value={form.city} onChange={handlechange}>
+        Select City:<select name='city' value={form.city} onChange={handlechange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
           <option value="indore">Indore</option>
