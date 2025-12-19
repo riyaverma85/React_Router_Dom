@@ -29,8 +29,8 @@ const App = () => {
             <tr>
               <th>Name</th>
               <th>age</th>
-              <th>cheackin</th>
-              <th>cheackout</th>
+              <th>checkin</th>
+              <th>checkout</th>
               <th>aadharnumber</th>
               <th>people</th>
               <th>Delete</th>
@@ -42,8 +42,8 @@ const App = () => {
          <tr>
             <td>{e.name}</td>
              <td>{e.age}</td>
-              <td>{e.cheackin}</td>
-               <td>{e.cheackout}</td>
+              <td>{e.checkin}</td>
+               <td>{e.checkout}</td>
                 <td>{e.aadharnumber}</td>
                 <td>{e.people}</td>
                 <td>{e.people*e.person}</td>

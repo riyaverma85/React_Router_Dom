@@ -133,9 +133,9 @@ const App = () => {
         </select><br/>
 
         Checkin:
-        <input type='date' name='Cheackin'  value={form.Cheackin} onChange={handlechange} /><br/>
+        <input type='date' name='Checkin'  value={form.Checkin} onChange={handlechange} /><br/>
         Checkout:
-        <input type='date' name='cheackout' value={form.cheackout} onChange={handlechange} /><br/>
+        <input type='date' name='checkout' value={form.checkout} onChange={handlechange} /><br/>
         <button type="submit">Submit</button>
       </form>
     </>
