@@ -15,8 +15,19 @@ const App = () => {
   let[editId,seteditId]=useState([null])
 
   let FetchData=()=>{
-    
+    let api = "http://localhost:3000/Hotel";  
+    axios.get(api).then((res) => {
+        console.log(res.data);
+        setData(res.data)
+      })
+      .catch((err) => {
+        console.log("Error", err);
+      });
   }
+
+  useEffect(()=>{
+    FetchData()
+  },[])
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
