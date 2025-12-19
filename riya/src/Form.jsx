@@ -90,8 +90,8 @@ const App = () => {
     age: "",
     aadharnumber: "",
     city: "",
-    Cheackin: "",
-    cheackout: ""
+    Checkin: "",
+    checkout: ""
   })
 
   let handlechange = (e) => {
@@ -132,9 +132,9 @@ const App = () => {
           <option value="delhi">Delhi</option>
         </select><br/>
 
-        Cheackin:
+        Checkin:
         <input type='date' name='Cheackin'  value={form.Cheackin} onChange={handlechange} /><br/>
-        Cheackout:
+        Checkout:
         <input type='date' name='cheackout' value={form.cheackout} onChange={handlechange} /><br/>
         <button type="submit">Submit</button>
       </form>
