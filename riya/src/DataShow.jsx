@@ -36,7 +36,16 @@ alert("Booking canceled")
 FetchData()
    } )
   }
-  
+  let handleChange=(e)=>{
+    setform({...form,[e.target.name]:e.target.value})
+  }
+  let Handlesubmit=(e)=>{
+    e.preventDefault();
+  }
+  let formopen=(e)=>{
+    seteditId(e.id)
+    setform({name:e.name,})
+  }
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
@@ -47,12 +56,7 @@ FetchData()
         console.log("Error", err);
       });
   }, []); 
-  let DataDelete=(id)=>{
-    let api = `http://localhost:3000/Hotel/${id}`;  
-      axios.delete(api).then(()=>(
-        alert("data deleted")
-      ))
-  }
+  
 
   return (
     <>
