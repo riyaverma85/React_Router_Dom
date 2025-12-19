@@ -110,7 +110,7 @@ FetchData()
         <input type='date' name='Checkin'  value={form.checkin} onChange={HandleChange} /><br/>
         Checkout:
         <input type='date' name='checkout' value={form.checkout} onChange={HandleChange} /><br/>
-        <button type="submit">Shave</button>
+        <button type="submit">Shavedata</button>
       </form>
       )
 
