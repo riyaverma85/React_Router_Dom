@@ -6,10 +6,10 @@ const App = () => {
    name:"",
    age:"",
    aadharnumber:"",
-   city:"",
-   checkin:"",
-   checkout:"",
-   people:""
+   cheackin:"",
+   cheackout:"",
+    city:"",
+   person:""
   })
 
   let[Data,setData]=useState([])
@@ -31,12 +31,13 @@ const App = () => {
   },[])
 
   let DataDelete=(id)=>{
-    let api = "http://localhost:3000/Hotel";  
+    let api = `http://localhost:3000/Hotel${id}`;  
     axios.delete(api).then(() => {
 alert("Booking canceled")
 FetchData()
    } )
   }
+
   let HandleChange=(e)=>{
     setform({...form,[e.target.name]:e.target.value})
   }
@@ -46,7 +47,7 @@ FetchData()
   let formopen=(e)=>{
     seteditId(e.id)
     setform({name:e.name,age:e.age,aadharnumber:e.aadharnumber,
-      checkin:e.checkin,checkout:e.checkout,people:e.people})
+      cheackin:e.cheackin,cheackout:e.cheackout,city:e.city,person:e.person})
   }
   
   return (
@@ -58,11 +59,14 @@ FetchData()
             <tr>
               <th>Name</th>
               <th>Age</th>
-              <th>checkin</th>
-              <th>checkout</th>
               <th>aadharnumber</th>
+              <th>cheackin</th>
+              <th>cheackout</th>
+              <th>city</th>
               <th>people</th>
+              <th>Edit</th>
               <th>Delete</th>
+              
             </tr>
         </thead>
        
@@ -72,12 +76,13 @@ FetchData()
             <td>{e.name}</td>
              <td>{e.age}</td>
               <td>{e.aadharnumber}</td>
-              <td>{e.checkin}</td>
-               <td>{e.checkout}</td>
-                <td>{e.people}</td>
-                <td>{e.people*e.person}</td>
-                <td onClick={()=>(DataDelete(e.id))}> delete</td>
+              <td>{e.cheackin}</td>
+               <td>{e.cheackout}</td>
+               <td>{e.city}</td>
+                <td>{e.person}</td>
                 <td onClick={()=>(formopen(e))}>Edit</td>
+                <td onClick={()=>(DataDelete(e.id))}> delete</td>
+                
           </tr>
               ))}
         </tbody>
@@ -88,18 +93,19 @@ FetchData()
       Enter Name:<input type='text' name='name' value={form.name} onChange={HandleChange} /><br/>
       Enter Age:<input type='text' name='age' value={form.age} onChange={HandleChange} /><br/>
       Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={HandleChange} /><br/>
-      people:<input type='text' name='people' value={form.people} onChange={HandleChange}/><br/>
+       Cheackin:
+        <input type='date' name='Checkin'  value={form.cheackin} onChange={HandleChange} /><br/>
+        Cheackout:
+        <input type='date' name='checkout' value={form.cheackout} onChange={HandleChange} /><br/>
       Select City:<select name='city' value={form.city} onChange={HandleChange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
           <option value="indore">Indore</option>
           <option value="delhi">Delhi</option>
         </select><br/>
+      person:<input type='text' name='person' value={form.person} onChange={HandleChange}/><br/>
 
-        Checkin:
-        <input type='date' name='Checkin'  value={form.checkin} onChange={HandleChange} /><br/>
-        Checkout:
-        <input type='date' name='checkout' value={form.checkout} onChange={HandleChange} /><br/>
+       
         <button type="submit">Shave Data</button>
       </form>
       )

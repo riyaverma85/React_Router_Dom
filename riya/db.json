@@ -5,31 +5,10 @@
       "name": "shivani",
       "age": "22",
       "aadharnumber": "1234567899",
-      "city": "",
-      "Cheackin": "2025-12-09",
+      "cheackin": "2025-12-09",
       "cheackout": "2025-12-25",
-      "person": 500
-    },
-    {
-      "id": "12c7",
-      "name": "fff",
-      "age": "10",
-      "aadharnumber": "54321123",
-      "city": "delhi",
-      "Cheackin": "2025-12-10",
-      "cheackout": "2025-12-11",
-      "person": 500
-    },
-    {
-      "id": "425f",
-      "name": "Riya",
-      "age": "20",
-      "aadharnumber": "12344321",
-      "city": "",
-      "Checkin": "2025-12-24",
-      "checkout": "2025-12-19",
-      "people": "4",
-      "person": 500
+      "city": "Bhopal",
+      "person": "5"
     }
   ]
 }

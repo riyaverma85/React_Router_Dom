@@ -82,17 +82,17 @@
 
 
 import axios from 'axios'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const App = () => {
   let [form, setform] = useState({
     name: "",
     age: "",
     aadharnumber: "",
+    cheackin: "",
+    cheackout: "",
     city: "",
-    Checkin: "",
-    checkout: "",
-    people:""
+    person:""
   })
 
   let Handlechange = (e) => {
@@ -125,7 +125,10 @@ const App = () => {
       Enter Name:<input type='text' name='name' value={form.name} onChange={Handlechange} /><br/>
       Enter Age:<input type='text' name='age' value={form.age} onChange={Handlechange} /><br/>
       Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={Handlechange} /><br/>
-      people:<input type='text' name='people' value={form.people} onChange={Handlechange}/><br/>
+      Cheackin:
+        <input type='date' name='Cheackin'  value={form.cheackin} onChange={Handlechange} /><br/>
+        Cheackout:
+        <input type='date' name='cheackout' value={form.cheackout} onChange={Handlechange} /><br/>
       Select City:<select name='city' value={form.city} onChange={Handlechange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
@@ -133,10 +136,8 @@ const App = () => {
           <option value="delhi">Delhi</option>
         </select><br/>
 
-        Checkin:
-        <input type='date' name='Checkin'  value={form.Checkin} onChange={Handlechange} /><br/>
-        Checkout:
-        <input type='date' name='checkout' value={form.checkout} onChange={Handlechange} /><br/>
+      person:<input type='text' name='person' value={form.person} onChange={Handlechange}/><br/>
+
         <button type="submit">Shave Data</button>
       </form>
     </>
