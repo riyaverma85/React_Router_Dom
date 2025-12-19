@@ -92,6 +92,29 @@ FetchData()
               ))}
         </tbody>
       </table>
+
+      { editId &&(
+        <form onSubmit={Handlesubmit}>
+      Enter Name:<input type='text' name='name' value={form.name} onChange={handlechange} /><br/>
+      Enter Age:<input type='text' name='age' value={form.age} onChange={handlechange} /><br/>
+      Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={handlechange} /><br/>
+      people:<input type='text' name='people' value={form.people} onChange={handlechange}/><br/>
+      Select City:<select name='city' value={form.city} onChange={handlechange}>
+          <option value="Bhopal">Bhopal</option>
+          <option value="sehore">Sehore</option>
+          <option value="indore">Indore</option>
+          <option value="delhi">Delhi</option>
+        </select><br/>
+
+        Checkin:
+        <input type='date' name='Checkin'  value={form.Checkin} onChange={handlechange} /><br/>
+        Checkout:
+        <input type='date' name='checkout' value={form.checkout} onChange={handlechange} /><br/>
+        <button type="submit">Submit</button>
+      </form>
+      )
+
+      }
     </>
   );
 }
