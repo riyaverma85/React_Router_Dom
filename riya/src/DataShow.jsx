@@ -2,7 +2,21 @@
  import React, { useEffect, useState } from 'react';
 
 const App = () => {
+  let [form,setform]=useState({
+   name:"",
+   age:"",
+   aadharnumber:"",
+   checkin:"",
+   checkout:"",
+   people:""
+  })
+
   let[Data,setData]=useState([])
+  let[editId,seteditId]=useState([null])
+
+  let FetchData=()=>{
+    
+  }
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
