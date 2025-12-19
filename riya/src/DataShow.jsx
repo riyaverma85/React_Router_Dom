@@ -47,18 +47,7 @@ FetchData()
     setform({name:e.name,age:e.age,aadharnumber:e.aadharnumber,
       checkin:e.checkin,checkout:e.checkout,people:e.people})
   }
-  useEffect(() => {
-    let api = "http://localhost:3000/Hotel";  
-    axios.get(api).then((res) => {
-        console.log(res.data);
-        setData(res.data)
-      })
-      .catch((err) => {
-        console.log("Error", err);
-      });
-  }, []); 
   
-
   return (
     <>
       <h1>Helloo</h1>
