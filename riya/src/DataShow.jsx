@@ -28,6 +28,15 @@ const App = () => {
   useEffect(()=>{
     FetchData()
   },[])
+
+  let DataDelete=(id)=>{
+    let api = "http://localhost:3000/Hotel";  
+    axios.get(api).then(() => {
+alert("Booking canceled")
+FetchData()
+   } )
+  }
+  
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
