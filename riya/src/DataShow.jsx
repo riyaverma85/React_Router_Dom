@@ -107,7 +107,7 @@ FetchData()
         </select><br/>
 
         Checkin:
-        <input type='date' name='Checkin'  value={form.Checkin} onChange={handlechange} /><br/>
+        <input type='date' name='Checkin'  value={form.checkin} onChange={handlechange} /><br/>
         Checkout:
         <input type='date' name='checkout' value={form.checkout} onChange={handlechange} /><br/>
         <button type="submit">Submit</button>
