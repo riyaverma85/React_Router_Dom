@@ -36,7 +36,7 @@ alert("Booking canceled")
 FetchData()
    } )
   }
-  let handleChange=(e)=>{
+  let HandleChange=(e)=>{
     setform({...form,[e.target.name]:e.target.value})
   }
   let Handlesubmit=(e)=>{
