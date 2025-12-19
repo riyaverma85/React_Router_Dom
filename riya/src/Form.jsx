@@ -91,7 +91,8 @@ const App = () => {
     aadharnumber: "",
     city: "",
     Checkin: "",
-    checkout: ""
+    checkout: "",
+    people:""
   })
 
   let handlechange = (e) => {
