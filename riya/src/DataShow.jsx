@@ -44,7 +44,8 @@ FetchData()
   }
   let formopen=(e)=>{
     seteditId(e.id)
-    setform({name:e.name,})
+    setform({name:e.name,age:e.age,aadharnumber:e.aadharnumber,
+      checkin:e.checkin,checkout:e.checkout,people:e.people})
   }
   useEffect(() => {
     let api = "http://localhost:3000/Hotel";  
@@ -80,12 +81,13 @@ FetchData()
          <tr>
             <td>{e.name}</td>
              <td>{e.age}</td>
+              <td>{e.aadharnumber}</td>
               <td>{e.checkin}</td>
                <td>{e.checkout}</td>
-                <td>{e.aadharnumber}</td>
                 <td>{e.people}</td>
                 <td>{e.people*e.person}</td>
                 <td onClick={()=>(DataDelete(e.id))}> delete</td>
+                <td onClick={()=>(formopen(e))}>Edit</td>
           </tr>
               ))}
         </tbody>
