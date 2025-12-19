@@ -95,11 +95,11 @@ FetchData()
 
       { editId &&(
         <form onSubmit={Handlesubmit}>
-      Enter Name:<input type='text' name='name' value={form.name} onChange={Handlechange} /><br/>
-      Enter Age:<input type='text' name='age' value={form.age} onChange={Handlechange} /><br/>
-      Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={handlechange} /><br/>
-      people:<input type='text' name='people' value={form.people} onChange={handlechange}/><br/>
-      Select City:<select name='city' value={form.city} onChange={handlechange}>
+      Enter Name:<input type='text' name='name' value={form.name} onChange={HandleChange} /><br/>
+      Enter Age:<input type='text' name='age' value={form.age} onChange={HandleChange} /><br/>
+      Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={HandleChange} /><br/>
+      people:<input type='text' name='people' value={form.people} onChange={HandleChange}/><br/>
+      Select City:<select name='city' value={form.city} onChange={HandleChange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
           <option value="indore">Indore</option>
@@ -107,9 +107,9 @@ FetchData()
         </select><br/>
 
         Checkin:
-        <input type='date' name='Checkin'  value={form.checkin} onChange={handlechange} /><br/>
+        <input type='date' name='Checkin'  value={form.checkin} onChange={HandleChange} /><br/>
         Checkout:
-        <input type='date' name='checkout' value={form.checkout} onChange={handlechange} /><br/>
+        <input type='date' name='checkout' value={form.checkout} onChange={HandleChange} /><br/>
         <button type="submit">Submit</button>
       </form>
       )
