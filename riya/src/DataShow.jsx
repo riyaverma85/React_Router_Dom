@@ -6,13 +6,14 @@ const App = () => {
    name:"",
    age:"",
    aadharnumber:"",
+   city:"",
    checkin:"",
    checkout:"",
    people:""
   })
 
   let[Data,setData]=useState([])
-  let[editId,seteditId]=useState([null])
+  let[editId,seteditId]=useState(null)
 
   let FetchData=()=>{
     let api = "http://localhost:3000/Hotel";  
@@ -31,7 +32,7 @@ const App = () => {
 
   let DataDelete=(id)=>{
     let api = "http://localhost:3000/Hotel";  
-    axios.get(api).then(() => {
+    axios.delete(api).then(() => {
 alert("Booking canceled")
 FetchData()
    } )
@@ -56,7 +57,7 @@ FetchData()
         <thead>
             <tr>
               <th>Name</th>
-              <th>age</th>
+              <th>Age</th>
               <th>checkin</th>
               <th>checkout</th>
               <th>aadharnumber</th>

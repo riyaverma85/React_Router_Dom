@@ -19,6 +19,17 @@
       "Cheackin": "2025-12-10",
       "cheackout": "2025-12-11",
       "person": 500
+    },
+    {
+      "id": "425f",
+      "name": "Riya",
+      "age": "20",
+      "aadharnumber": "12344321",
+      "city": "",
+      "Checkin": "2025-12-24",
+      "checkout": "2025-12-19",
+      "people": "4",
+      "person": 500
     }
   ]
 }

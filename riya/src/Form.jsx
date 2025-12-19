@@ -95,7 +95,7 @@ const App = () => {
     people:""
   })
 
-  let handlechange = (e) => {
+  let Handlechange = (e) => {
     setform({ ...form, [e.target.name]: e.target.value })
   }
 
@@ -122,11 +122,11 @@ const App = () => {
     <>
       <h1>Form Handling</h1>
       <form onSubmit={Handlesubmit}>
-      Enter Name:<input type='text' name='name' value={form.name} onChange={handlechange} /><br/>
-      Enter Age:<input type='text' name='age' value={form.age} onChange={handlechange} /><br/>
-      Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={handlechange} /><br/>
-      people:<input type='text' name='people' value={form.people} onChange={handlechange}/><br/>
-      Select City:<select name='city' value={form.city} onChange={handlechange}>
+      Enter Name:<input type='text' name='name' value={form.name} onChange={Handlechange} /><br/>
+      Enter Age:<input type='text' name='age' value={form.age} onChange={Handlechange} /><br/>
+      Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={Handlechange} /><br/>
+      people:<input type='text' name='people' value={form.people} onChange={Handlechange}/><br/>
+      Select City:<select name='city' value={form.city} onChange={Handlechange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
           <option value="indore">Indore</option>
@@ -134,10 +134,10 @@ const App = () => {
         </select><br/>
 
         Checkin:
-        <input type='date' name='Checkin'  value={form.Checkin} onChange={handlechange} /><br/>
+        <input type='date' name='Checkin'  value={form.Checkin} onChange={Handlechange} /><br/>
         Checkout:
-        <input type='date' name='checkout' value={form.checkout} onChange={handlechange} /><br/>
-        <button type="submit">Submit</button>
+        <input type='date' name='checkout' value={form.checkout} onChange={Handlechange} /><br/>
+        <button type="submit">Shave Data</button>
       </form>
     </>
   )
