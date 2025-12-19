@@ -95,8 +95,8 @@ FetchData()
 
       { editId &&(
         <form onSubmit={Handlesubmit}>
-      Enter Name:<input type='text' name='name' value={form.name} onChange={handlechange} /><br/>
-      Enter Age:<input type='text' name='age' value={form.age} onChange={handlechange} /><br/>
+      Enter Name:<input type='text' name='name' value={form.name} onChange={Handlechange} /><br/>
+      Enter Age:<input type='text' name='age' value={form.age} onChange={Handlechange} /><br/>
       Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={handlechange} /><br/>
       people:<input type='text' name='people' value={form.people} onChange={handlechange}/><br/>
       Select City:<select name='city' value={form.city} onChange={handlechange}>
