@@ -14,6 +14,7 @@ const App = () => {
 
   let[Data,setData]=useState([])
   let[editId,seteditId]=useState(null)
+  let [search,setsearch]=useState("")
 
   let FetchData=()=>{
     let api = "http://localhost:3000/Hotel";  
@@ -31,7 +32,7 @@ const App = () => {
   },[])
 
   let DataDelete=(id)=>{
-    let api = `http://localhost:3000/Hotel${id}`;  
+    let api = `http://localhost:3000/Hotel/${id}`;  
     axios.delete(api).then(() => {
 alert("Booking canceled")
 FetchData()
@@ -43,6 +44,22 @@ FetchData()
   }
   let Handlesubmit=(e)=>{
     e.preventDefault();
+  if(editId){
+    // Update existing record
+    let api = `http://localhost:3000/Hotel/${editId}`;
+    axios.put(api, form).then(() => {
+      alert("Data updated");
+      seteditId(null);
+      FetchData();
+    })
+  } else {
+    
+    let api = "http://localhost:3000/Hotel";
+    axios.post(api, form).then(() => {
+      alert("Data submitted");
+      FetchData();
+    })
+  }
   }
   let formopen=(e)=>{
     seteditId(e.id)
@@ -53,7 +70,7 @@ FetchData()
   return (
     <>
       <h1>Helloo</h1>
-
+    Search<input type='text' value={search} onChange={(e)=>{setsearch(e.target.value)}}/>
       <table border={2} >
         <thead>
             <tr>
@@ -63,7 +80,7 @@ FetchData()
               <th>cheackin</th>
               <th>cheackout</th>
               <th>city</th>
-              <th>people</th>
+              <th>person</th>
               <th>Edit</th>
               <th>Delete</th>
               
@@ -94,9 +111,9 @@ FetchData()
       Enter Age:<input type='text' name='age' value={form.age} onChange={HandleChange} /><br/>
       Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={HandleChange} /><br/>
        Cheackin:
-        <input type='date' name='Checkin'  value={form.cheackin} onChange={HandleChange} /><br/>
+        <input type='date' name='Cheackin'  value={form.cheackin} onChange={HandleChange} /><br/>
         Cheackout:
-        <input type='date' name='checkout' value={form.cheackout} onChange={HandleChange} /><br/>
+        <input type='date' name='cheackout' value={form.cheackout} onChange={HandleChange} /><br/>
       Select City:<select name='city' value={form.city} onChange={HandleChange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
