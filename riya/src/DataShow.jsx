@@ -87,8 +87,6 @@ const App = () => {
   return (
     <>
       <h1>Helloo</h1>
-
-      {/* ✅ Search bar aligned to right */}
       <div>
         <input type="text" placeholder="Search..." value={search}
           onChange={(e) => setsearch(e.target.value)}/>
