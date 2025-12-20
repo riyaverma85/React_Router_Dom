@@ -15,7 +15,9 @@ const App = () => {
   let[Data,setData]=useState([])
   let[editId,seteditId]=useState(null)
   let [search,setsearch]=useState("")
-
+let FilterData=MyData.filter((e)=>{
+        return e.toLowerCase().includes(search.toLowerCase())
+    })
   let FetchData=()=>{
     let api = "http://localhost:3000/Hotel";  
     axios.get(api).then((res) => {
@@ -71,6 +73,9 @@ FetchData()
     <>
       <h1>Helloo</h1>
     Search<input type='text' value={search} onChange={(e)=>{setsearch(e.target.value)}}/>
+    <ul>
+        {FilterData.map((e,i)=>(<li key={i}>{e}</li>))}
+    </ul>
       <table border={2} >
         <thead>
             <tr>
