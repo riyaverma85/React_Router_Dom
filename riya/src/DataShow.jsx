@@ -1,140 +1,153 @@
- import axios from 'axios';
- import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const App = () => {
-  let [form,setform]=useState({
-   name:"",
-   age:"",
-   aadharnumber:"",
-   cheackin:"",
-   cheackout:"",
-    city:"",
-   person:""
-  })
+  let [form, setform] = useState({
+    name: "",
+    age: "",
+    aadharnumber: "",
+    cheackin: "",
+    cheackout: "",
+    city: "",
+    person: ""
+  });
 
-  let[Data,setData]=useState([])
-  let[editId,seteditId]=useState(null)
-  let [search,setsearch]=useState("")
-  let MyData=["Riya","Shivani","Akash","Ravina"]
-let FilterData=MyData.filter((e)=>{
-        return e.toLowerCase().includes(search.toLowerCase())
-    })
-  let FetchData=()=>{
-    let api = "http://localhost:3000/Hotel";  
-    axios.get(api).then((res) => {
+  let [Data, setData] = useState([]);
+  let [editId, seteditId] = useState(null);
+  let [search, setsearch] = useState("");
+
+  // ✅ Filter should be applied on Data, not form
+  let FilterData = Data.filter((e) => {
+    return (
+      e.name.toLowerCase().includes(search.toLowerCase()) ||
+      e.city.toLowerCase().includes(search.toLowerCase()) ||
+      e.person.toLowerCase().includes(search.toLowerCase())
+    );
+  });
+
+  let FetchData = () => {
+    let api = "http://localhost:3000/Hotel";
+    axios.get(api)
+      .then((res) => {
         console.log(res.data);
-        setData(res.data)
+        setData(res.data);
       })
       .catch((err) => {
         console.log("Error", err);
       });
-  }
+  };
 
-  useEffect(()=>{
-    FetchData()
-  },[])
+  useEffect(() => {
+    FetchData();
+  }, []);
 
-  let DataDelete=(id)=>{
-    let api = `http://localhost:3000/Hotel/${id}`;  
+  let DataDelete = (id) => {
+    let api = `http://localhost:3000/Hotel/${id}`;
     axios.delete(api).then(() => {
-alert("Booking canceled")
-FetchData()
-   } )
-  }
+      alert("Booking canceled");
+      FetchData();
+    });
+  };
 
-  let HandleChange=(e)=>{
-    setform({...form,[e.target.name]:e.target.value})
-  }
-  let Handlesubmit=(e)=>{
+  let HandleChange = (e) => {
+    setform({ ...form, [e.target.name]: e.target.value });
+  };
+
+  let Handlesubmit = (e) => {
     e.preventDefault();
-  if(editId){
-    // Update existing record
-    let api = `http://localhost:3000/Hotel/${editId}`;
-    axios.put(api, form).then(() => {
-      alert("Data updated");
-      seteditId(null);
-      FetchData();
-    })
-  } else {
-    
-    let api = "http://localhost:3000/Hotel";
-    axios.post(api, form).then(() => {
-      alert("Data submitted");
-      FetchData();
-    })
-  }
-  }
-  let formopen=(e)=>{
-    seteditId(e.id)
-    setform({name:e.name,age:e.age,aadharnumber:e.aadharnumber,
-      cheackin:e.cheackin,cheackout:e.cheackout,city:e.city,person:e.person})
-  }
-  
+    if (editId) {
+      let api = `http://localhost:3000/Hotel/${editId}`;
+      axios.put(api, form).then(() => {
+        alert("Data updated");
+        seteditId(null);
+        FetchData();
+      });
+    } else {
+      let api = "http://localhost:3000/Hotel";
+      axios.post(api, form).then(() => {
+        alert("Data submitted");
+        FetchData();
+      });
+    }
+  };
+
+  let formopen = (e) => {
+    seteditId(e.id);
+    setform({
+      name: e.name,
+      age: e.age,
+      aadharnumber: e.aadharnumber,
+      cheackin: e.cheackin,
+      cheackout: e.cheackout,
+      city: e.city,
+      person: e.person
+    });
+  };
+
   return (
     <>
       <h1>Helloo</h1>
-    Search<input type='text' value={search} onChange={(e)=>{setsearch(e.target.value)}}/>
-    <ul>
-        {FilterData.map((e,i)=>(<li key={i}>{e}</li>))}
-    </ul>
+
+      {/* ✅ Search bar aligned to right */}
+      <div>
+        <input type="text" placeholder="Search..." value={search}
+          onChange={(e) => setsearch(e.target.value)}/>
+      </div>
+
       <table border={2} >
         <thead>
-            <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>aadharnumber</th>
-              <th>cheackin</th>
-              <th>cheackout</th>
-              <th>city</th>
-              <th>person</th>
-              <th>Edit</th>
-              <th>Delete</th>
-              
-            </tr>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>aadharnumber</th>
+            <th>cheackin</th>
+            <th>cheackout</th>
+            <th>city</th>
+            <th>person</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
         </thead>
-       
+
         <tbody>
-           {Data.map((e)=>(
-         <tr>
-            <td>{e.name}</td>
-             <td>{e.age}</td>
+          {FilterData.map((e) => (
+            <tr key={e.id}>
+              <td>{e.name}</td>
+              <td>{e.age}</td>
               <td>{e.aadharnumber}</td>
               <td>{e.cheackin}</td>
-               <td>{e.cheackout}</td>
-               <td>{e.city}</td>
-                <td>{e.person}</td>
-                <td onClick={()=>(formopen(e))}>Edit</td>
-                <td onClick={()=>(DataDelete(e.id))}> delete</td>
-                
-          </tr>
-              ))}
+              <td>{e.cheackout}</td>
+              <td>{e.city}</td>
+              <td>{e.person}</td>
+              <td onClick={() => formopen(e)}>Edit</td>
+              <td onClick={() => DataDelete(e.id)}>Delete</td>
+            </tr>
+          ))}
         </tbody>
       </table>
 
-      { editId &&(
+      {editId && (
         <form onSubmit={Handlesubmit}>
-      Enter Name:<input type='text' name='name' value={form.name} onChange={HandleChange} /><br/>
-      Enter Age:<input type='text' name='age' value={form.age} onChange={HandleChange} /><br/>
-      Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={HandleChange} /><br/>
-       Cheackin:
-        <input type='date' name='Cheackin'  value={form.cheackin} onChange={HandleChange} /><br/>
-        Cheackout:
-        <input type='date' name='cheackout' value={form.cheackout} onChange={HandleChange} /><br/>
-      Select City:<select name='city' value={form.city} onChange={HandleChange}>
-          <option value="Bhopal">Bhopal</option>
-          <option value="sehore">Sehore</option>
-          <option value="indore">Indore</option>
-          <option value="delhi">Delhi</option>
-        </select><br/>
-      person:<input type='text' name='person' value={form.person} onChange={HandleChange}/><br/>
+          Enter Name:<input type='text' name='name' value={form.name} onChange={HandleChange} /><br />
+          Enter Age:<input type='text' name='age' value={form.age} onChange={HandleChange} /><br />
+          Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={HandleChange} /><br />
+          Cheackin:
+          <input type='date' name='cheackin' value={form.cheackin} onChange={HandleChange} /><br />
+          Cheackout:
+          <input type='date' name='cheackout' value={form.cheackout} onChange={HandleChange} /><br />
+          Select City:<select name='city' value={form.city} onChange={HandleChange}>
+            <option value="Bhopal">Bhopal</option>
+            <option value="sehore">Sehore</option>
+            <option value="indore">Indore</option>
+            <option value="delhi">Delhi</option>
+          </select><br />
+          person:<input type='text' name='person' value={form.person} onChange={HandleChange} /><br />
 
-       
-        <button type="submit">Shave Data</button>
-      </form>
-      )
-
-      }
+          <button type="submit">Save Data</button>
+        </form>
+      )}
     </>
   );
-}
+};
+
 export default App;
