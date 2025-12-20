@@ -15,6 +15,7 @@ const App = () => {
   let[Data,setData]=useState([])
   let[editId,seteditId]=useState(null)
   let [search,setsearch]=useState("")
+  let MyData=["Riya","Shivani","Akash","Ravina"]
 let FilterData=MyData.filter((e)=>{
         return e.toLowerCase().includes(search.toLowerCase())
     })
