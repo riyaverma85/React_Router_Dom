@@ -2,13 +2,33 @@
   "Hotel": [
     {
       "id": "d626",
-      "name": "shivani",
+      "name": "Shivani",
       "age": "22",
       "aadharnumber": "1234567899",
       "cheackin": "2025-12-09",
       "cheackout": "2025-12-25",
       "city": "Bhopal",
       "person": "5"
+    },
+    {
+      "id": "abe3",
+      "name": "Akash",
+      "age": "18",
+      "aadharnumber": "756387648726946",
+      "cheackin": "2025-12-21",
+      "cheackout": "2025-12-17",
+      "city": "",
+      "person": 500
+    },
+    {
+      "id": "9e51",
+      "name": "shavi",
+      "age": "12",
+      "aadharnumber": "4343434343",
+      "cheackin": "2025-12-18",
+      "cheackout": "2025-12-22",
+      "city": "indore",
+      "person": 500
     }
   ]
 }

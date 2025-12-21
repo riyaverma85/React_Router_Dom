@@ -18,13 +18,12 @@ const App = () => {
 
   // ✅ Filter should be applied on Data, not form
   let FilterData = Data.filter((e) => {
-    return (
-      e.name.toLowerCase().includes(search.toLowerCase()) ||
-      e.city.toLowerCase().includes(search.toLowerCase()) ||
-      e.person.toLowerCase().includes(search.toLowerCase())
-    );
-  });
-
+  return (
+    (e.name && e.name.toLowerCase().includes(search.toLowerCase())) ||
+    (e.city && e.city.toLowerCase().includes(search.toLowerCase())) ||
+    (e.person && String(e.person).toLowerCase().includes(search.toLowerCase()))
+  );
+});
   let FetchData = () => {
     let api = "http://localhost:3000/Hotel";
     axios.get(api)
