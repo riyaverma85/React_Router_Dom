@@ -126,8 +126,7 @@ const App = () => {
       Enter Age:<input type='text' name='age' value={form.age} onChange={Handlechange} /><br/>
       Enter aadharnumber:<input type='text' name='aadharnumber' value={form.aadharnumber} onChange={Handlechange} /><br/>
       Cheackin:<input type='date' name='cheackin'  value={form.cheackin} onChange={Handlechange} /><br/>
-        Cheackout:
-        <input type='date' name='cheackout' value={form.cheackout} onChange={Handlechange} /><br/>
+        Cheackout:<input type='date' name='cheackout' value={form.cheackout} onChange={Handlechange} /><br/>
       Select City:<select name='city' value={form.city} onChange={Handlechange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
