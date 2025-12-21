@@ -84,7 +84,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 const App = () => {
-  let [form, setform] = useState({
+  let [form,setform] = useState({
     name: "",
     age: "",
     aadharnumber: "",
