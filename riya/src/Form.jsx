@@ -112,7 +112,7 @@ const App = () => {
     if(valid){
         let api = "http://localhost:3000/Hotel";  
         axios.post(api,{...form,person:500}).then((res)=>{
-          alert("Data submited")
+        alert("Data submited")
         })
     }
   }
