@@ -137,7 +137,7 @@ const App = () => {
         </select><br/>
 
       person:<input type='text' name='person' value={form.person} onChange={Handlechange}/><br/>
-<button type="submit">Shave Data</button>
+       <button type="submit">Shave Data</button>
       </form>
     </>
   )
