@@ -129,7 +129,7 @@ const App = () => {
       Cheackout:<input type='date' name='cheackout' value={form.cheackout} onChange={Handlechange} /><br/>
       Select City:
       
-      <select name='city' value={form.city} onChange={Handlechange}>
+         <select name='city' value={form.city} onChange={Handlechange}>
           <option value="Bhopal">Bhopal</option>
           <option value="sehore">Sehore</option>
           <option value="indore">Indore</option>
