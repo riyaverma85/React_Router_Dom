@@ -16,7 +16,7 @@ const App = () => {
   let [editId, seteditId] = useState(null);
   let [search, setsearch] = useState("");
 
-  // ✅ Filter should be applied on Data, not form
+  
   let FilterData = Data.filter((e) => {
   return (
     (e.name && e.name.toLowerCase().includes(search.toLowerCase())) ||
