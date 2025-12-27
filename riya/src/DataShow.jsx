@@ -107,7 +107,7 @@ const App = () => {
         </thead>
 
         <tbody>
-          {FilterData.map((e)=> (
+          {FilterData.map((e)=>(
             <tr key={e.id}>
               <td>{e.name}</td>
               <td>{e.age}</td>
