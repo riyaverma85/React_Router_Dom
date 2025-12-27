@@ -32,7 +32,7 @@ const App = () => {
         setData(res.data);
       })
       .catch((err) => {
-        console.log("Error", err);
+        console.log("Error",err);
       });
   };
 
