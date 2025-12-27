@@ -117,7 +117,7 @@ const App = () => {
               <td>{e.city}</td>
               <td>{e.person}</td>
               <td onClick={()=> formopen(e)}>Edit</td>
-              <td onClick={() => DataDelete(e.id)}>Delete</td>
+              <td onClick={()=> DataDelete(e.id)}>Delete</td>
             </tr>
           ))}
         </tbody>
