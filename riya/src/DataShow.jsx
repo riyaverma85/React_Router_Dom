@@ -56,7 +56,7 @@ const App = () => {
     e.preventDefault();
     if (editId) {
       let api = `http://localhost:3000/Hotel/${editId}`;
-      axios.put(api, form).then(() => {
+      axios.put(api,form).then(() => {
         alert("Data updated");
         seteditId(null);
         FetchData();
