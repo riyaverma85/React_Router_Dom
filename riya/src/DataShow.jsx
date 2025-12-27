@@ -70,7 +70,7 @@ const App = () => {
     }
   };
 
-  let formopen =(e) => {
+  let formopen=(e) => {
     seteditId(e.id);
     setform({
       name: e.name,
