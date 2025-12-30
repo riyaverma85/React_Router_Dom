@@ -1,5 +1,6 @@
 import React from 'react'
 import Child from './Child';
+import img from './download.jpg';
 const App = () => {
   return (
     <>
