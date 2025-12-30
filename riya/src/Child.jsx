@@ -1,6 +1,6 @@
 import React from 'react'
 // import img from "..//src/download.jpg"
-const Child= ({myname,myage,myprice,myproductname,myimg}) => {
+const Child= ({myname,myage,myprice,myproductname,img}) => {
   // let[name,age,city]=mydata
 
   // let props={
