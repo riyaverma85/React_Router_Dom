@@ -14,7 +14,7 @@ const Child= ({myname,myage,myprice,myproductname,img}) => {
      <h1>Hello Child </h1>
      <img src="/download.jpg" alt="product" />
      <h2>My Name is = {myname} </h2>
-     <h2>My Age is = {myage}</h2>
+     <h2>My Age is = {myage} </h2>
      <h2>My Price is = {myprice}</h2>
      <h2>My Product is = {myproductname}</h2>
       </div>
