@@ -21,4 +21,4 @@ const Child= ({myname,myage,myprice,myproductname,img}) => {
   )
 }
 
-export default Child;
+export default Child
