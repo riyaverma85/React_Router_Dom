@@ -10,7 +10,7 @@ const Layout = () => {
             <li><Link to="service">Service</Link></li>
             <li><Link to="contect">Contect</Link></li>
         </ul>
-    </header>
+     </header>
     <Outlet/>
     </>
   )
