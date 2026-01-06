@@ -148,7 +148,7 @@ import React, { useState } from "react";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const toggleMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode(!darkMode)
   }
   return (
      <div style={{backgroundColor: darkMode ? "black" : "white",
