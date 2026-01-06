@@ -151,7 +151,7 @@ function App() {
     setDarkMode(!darkMode);
   }
   return (
-    <div style={{backgroundColor: darkMode ? "black" : "white",
+     <div style={{backgroundColor: darkMode ? "black" : "white",
     color: darkMode ? "white" : "black",
     minHeight: "100vh",
     display: "flex",
