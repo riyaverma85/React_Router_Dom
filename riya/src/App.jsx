@@ -161,7 +161,7 @@ function App() {
     transition: "all 0.3s ease",}}>
       <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
       <button onClick={toggleMode}> Toggle Dark Mode!</button>
-      </div>
+       </div>
   );
 }
 export default App
