@@ -1,6 +1,6 @@
 import React from 'react'
 // import img from "..//src/download.jpg"
-const Child= ({myname,myage,myprice,myproductname,img}) => {
+const Child= ({myname,myage,myprice,myproductname}) => {
   // let[name,age,city]=mydata
 
   // let props={
@@ -12,7 +12,6 @@ const Child= ({myname,myage,myprice,myproductname,img}) => {
   return (
     <div>
      <h1>Hello Child </h1>
-     <img src="/download.jpg" alt="product" />
      <h2>My Name is = {myname} </h2>
      <h2>My Age is = {myage} </h2>
      <h2>My Price is = {myprice} </h2>
