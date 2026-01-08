@@ -54,25 +54,50 @@
 // export default Map
 
 
-const Map=()=>{
-  let Data=[
-    { name:"samosa" ,prize:12 ,location:"parihar"},
-    {name:"kachori",prize:14, location:"millan M.P nager"},
-    {name:"panipuri", prize:10,location:"manpdi"},
+// const Map=()=>{
+//   let Data=[
+//     { name:"samosa" ,prize:12 ,location:"parihar"},
+//     {name:"kachori",prize:14, location:"millan M.P nager"},
+//     {name:"panipuri", prize:10,location:"manpdi"},
 
+//   ]
+//   return(
+//     <>
+//     {Data.map((i)=>(
+//       <div key= {i}>
+//        <h1>{i.name}</h1>
+//        <p>{i.prize}</p>
+//        <p>{i.location}</p>
+//       </div>
+//     )
+
+//     )}
+//     </>
+//   )
+// }
+// export default Map
+
+
+
+import React from 'react'
+
+const Map = () => {
+  let Products=[
+    {id:1,name:"laptop",price:50000},
+    {id:2,name:"Mobile",price:20000}
   ]
-  return(
+  return (
     <>
-    {Data.map((i)=>(
-      <div key= {i}>
-       <h1>{i.name}</h1>
-       <p>{i.prize}</p>
-       <p>{i.location}</p>
+    {Products.map((i)=>(
+      <div key={i}>
+        <h1>{i.name}</h1>
+        <p>{i.price}</p>
       </div>
     )
 
-    )}
+   )}
     </>
   )
 }
+
 export default Map
