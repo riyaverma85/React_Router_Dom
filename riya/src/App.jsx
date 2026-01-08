@@ -144,24 +144,40 @@
 // export default App;
 /////////////////////////////////////////////////////////////////
 
-import React, { useState } from "react";
-function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleMode = () => {
-    setDarkMode(!darkMode)
-  }
+// import React, { useState } from "react";
+// function App() {
+//   const [darkMode, setDarkMode] = useState(false);
+//   const toggleMode = () => {
+//     setDarkMode(!darkMode)
+//   }
+//   return (
+//      <div style={{backgroundColor: darkMode ? "black" : "white",
+//     color: darkMode ? "white" : "black",
+//     minHeight: "100vh",
+//     display: "flex",
+//     flexDirection: "column",
+//     alignItems: "center",
+//     justifyContent: "center",
+//     transition: "all 0.3s ease",}}>
+//       <h1>{darkMode ?"Dark Mode" : "Light Mode"}</h1>
+//       <button onClick={toggleMode}>Toggle Dark Mode!</button>
+//        </div>
+//   );
+// }
+// export default App
+
+
+import React from 'react'
+import Navbar from './assets/Navbar'
+import Footer from './assets/footer'
+const App = () => {
   return (
-     <div style={{backgroundColor: darkMode ? "black" : "white",
-    color: darkMode ? "white" : "black",
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    transition: "all 0.3s ease",}}>
-      <h1>{darkMode ?"Dark Mode" : "Light Mode"}</h1>
-      <button onClick={toggleMode}>Toggle Dark Mode!</button>
-       </div>
-  );
+  <>
+  <Navbar />
+  Welcome to react
+  <Footer/>
+  </>
+  )
 }
+
 export default App

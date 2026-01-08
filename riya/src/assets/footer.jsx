@@ -5,7 +5,8 @@ const Riya=()=>{
 return(
 
     <div>
-        <button onClick={Riya}>clicke</button>
+        Footer(default export import)
+        {/* <button onClick={Riya}>clicke</button> */}
     </div>
 )
 }
