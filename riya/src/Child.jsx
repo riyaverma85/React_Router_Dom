@@ -29,8 +29,8 @@ import React from 'react'
 const Child = ({myname,course}) => {
   return (
     <div>
-      <h1> Hello,my name is{myname}</h1>
-      <h1>and i am lurning{course}</h1>
+      <h1> Hello,my name is = {myname}</h1>
+      <h1>and i am lurning = {course}</h1>
     </div>
   )
 }

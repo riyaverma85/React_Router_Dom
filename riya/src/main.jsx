@@ -1,7 +1,7 @@
 
 import { createRoot } from 'react-dom/client'
 
-import App from "./Student.jsx"
+import App from "./props.jsx"
 // import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document . getElementById ('root')) . render(
