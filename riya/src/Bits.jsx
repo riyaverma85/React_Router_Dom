@@ -12,7 +12,7 @@ const App = () => {
     wallBounce={0.95}
     followCursor={true}
   />
-</div>
+ </div>
 </>
   )
 }
