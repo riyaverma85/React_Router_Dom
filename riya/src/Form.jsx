@@ -97,7 +97,6 @@ const App = () => {
   let Handlechange = (e) => {
     setform({ ...form, [e.target.name]: e.target.value })
   }
-
   let Handlesubmit = (e) => {
     e.preventDefault();
     let valid = true;
