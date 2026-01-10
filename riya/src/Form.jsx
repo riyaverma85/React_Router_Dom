@@ -100,7 +100,6 @@ const App = () => {
   let Handlesubmit = (e) => {
     e.preventDefault();
     let valid = true;
-
     if (form.name.trim() === "") {
       alert("Name cannot be empty")
       valid = false
