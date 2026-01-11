@@ -9,7 +9,7 @@ const App = () => {
      count={200}
      gravity={0.7}
      friction={0.8}
-      wallBounce={0.95}
+     wallBounce={0.95}
      followCursor={true}
   />
  </div>
