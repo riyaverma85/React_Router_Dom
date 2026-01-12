@@ -129,7 +129,7 @@ const App = () => {
        <select name='city' value={form.city} onChange={Handlechange}>
           <option value= "Bhopal">Bhopal</option>
           <option value= "sehore">Sehore</option>
-          <option value="indore">Indore</option>
+          <option value= "indore">Indore</option>
           <option value="delhi">Delhi</option>
         </select><br/>
 
