@@ -136,7 +136,7 @@ const App = () => {
              <option value="Bhopal"> Bhopal</option>
              <option value="sehore"> Sehore</option>
              <option value="indore"> Indore</option>
-             <option value="delhi"> Delhi</option>
+             <option value="delhi"> Delhi </option>
           </select><br />
           person:<input type='text' name='person' value={form.person} onChange={HandleChange} /><br />
 
