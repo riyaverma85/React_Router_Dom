@@ -140,7 +140,7 @@ const App = () => {
           </select><br />
           person:<input type='text' name='person' value={form.person} onChange={HandleChange} /><br />
 
-          <button type="submit">Save Data</button>
+          <button type="submit"> Save Data</button>
         </form>
       )}
     </>
