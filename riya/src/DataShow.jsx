@@ -98,7 +98,7 @@ const App = () => {
              <th>Age</th>
              <th>aadharnumber</th>
              <th>cheackin</th>
-            <th>cheackout</th>
+             <th>cheackout</th>
             <th>city</th>
             <th>person</th>
             <th>Edit</th>
