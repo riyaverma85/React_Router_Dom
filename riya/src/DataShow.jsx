@@ -94,7 +94,7 @@ const App = () => {
       <table border={2} >
         <thead>
           <tr>
-            <th>Name</th>
+             <th>Name</th>
             <th>Age</th>
             <th>aadharnumber</th>
             <th>cheackin</th>
