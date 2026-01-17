@@ -100,7 +100,7 @@ const App = () => {
               <th>cheackin</th>
               <th>cheackout</th>
               <th>city</th>
-             <th>person</th>
+              <th>person</th>
              <th>Edit</th>
              <th>Delete</th>
           </tr>
