@@ -95,7 +95,7 @@ const App = () => {
         <thead>
           <tr>
               <th>Name</th>
-             <th>Age</th>
+              <th>Age</th>
              <th>aadharnumber</th>
              <th>cheackin</th>
              <th>cheackout</th>
