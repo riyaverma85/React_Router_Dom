@@ -102,7 +102,7 @@ const App = () => {
               <th>city</th>
               <th>person</th>
               <th>Edit</th>
-             <th>Delete</th>
+              <th>Delete</th>
           </tr>
         </thead>
 
