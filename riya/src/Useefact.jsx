@@ -4,6 +4,7 @@ const App = () => {
 let [Count,setCount]=useState(0)
 let Incri=()=>{
     setCount(Count+1)
+    console.log(Count);
 }
  useEffect (()=>{
      console.log("running.....")
