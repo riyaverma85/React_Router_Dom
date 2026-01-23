@@ -31,7 +31,7 @@ const Child = ({myname,course}) => {
         <div>
             <h1> Hello,my name is {myname} </h1>
             <h1> and i am lurning {course} </h1>
-       </div>
+        </div>
   )
 }
 
