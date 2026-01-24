@@ -173,7 +173,7 @@ import Footer from './assets/footer'
 const App = () => {
   return (
   <>
-   <Navbar />
+   <Navbar/>
       Welcome to react
    <Footer/>
   </>
