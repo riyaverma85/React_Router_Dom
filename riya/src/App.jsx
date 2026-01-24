@@ -176,7 +176,7 @@ const App = () => {
    <Navbar/>
       Welcome to react
    <Footer/>
-  </>
+   </>
   )
 }
 
