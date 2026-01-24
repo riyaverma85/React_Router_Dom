@@ -172,7 +172,7 @@ import Navbar from './assets/Navbar'
 import Footer from './assets/footer'
 const App = () => {
   return (
-  <>
+   <>
    <Navbar/>
       Welcome to react
    <Footer/>
