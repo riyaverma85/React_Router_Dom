@@ -8,7 +8,17 @@ const Mybooking = () => {
     }
   return (
     <>
-
+<h1>my booking</h1>
+<table >
+    <thead>
+        <tr>
+            <th>Movie Name</th>
+            <th>Date</th>
+            <th>City</th>
+            <th>Person</th>
+        </tr>
+    </thead>
+</table>
 
     </>
   )
