@@ -40,5 +40,14 @@
       "city": "delhi",
       "person": 500
     }
+  ],
+  "Movie":[
+    {
+      "movie name": "border 2",
+      "date":"2026-13-01",
+      "city":"bhopal",
+      "person":"2"
+    }
   ]
+  
 }
