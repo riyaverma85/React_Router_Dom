@@ -9,7 +9,7 @@ const Mybooking = () => {
   return (
     <>
 <h1>my booking</h1>
-<table >
+<table className='border'>
     <thead>
         <tr>
             <th>Movie Name</th>
