@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import {useEffect, useState } from 'react'
-const Mybooking = () => {
+const App = () => {
 
     let[Data,setData]=useState([])
     let FetchData=()=>{
-        let api="http://localhost:3000/Hotel"
-    axios.get(api).then(
-        (res)=>{
+        let api="http://localhost:3000/Movie"
+    axios.get(api).then((res)=>{
             console.log(res.data)
             setData(res.data)
-        }
-    ).catch((err)=>{
+        }).catch((err)=>{
         console.log("error")
     })
     }
@@ -21,7 +18,7 @@ const Mybooking = () => {
     },[])
 
     let DeleteData=(id)=>{
-        let api="http://localhost:3000/Hotel"
+        let api=`http://localhost:3000/Movie/${id}`
         axios.delete(api).then(()=>{
             FetchData()
             alert("data deleted")
@@ -41,11 +38,11 @@ const Mybooking = () => {
     </thead>
     <tbody>
         {Data.map((e)=>(
-        <tr className='border' key={e.id}>
-            <td>{e.MovieName}</td>
-            <td>{e.Date}</td>
-            <td>{e.City}</td>
-            <td>{e.Person}</td>
+        <tr style={{border:"2"}} key={e.id}>
+            <td>{e.moviename}</td>
+            <td>{e.date}</td>
+            <td>{e.city}</td>
+            <td>{e.person}</td>
             <td onClick={()=>{DeleteData(e.id)}}>delete</td>
         </tr>
         ))}
@@ -56,4 +53,4 @@ const Mybooking = () => {
   )
 }
 
-export default Mybooking
+export default App

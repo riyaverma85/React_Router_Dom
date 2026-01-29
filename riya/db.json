@@ -29,25 +29,15 @@
       "cheackout": "2025-12-22",
       "city": "indore",
       "person": 500
-    },
-    {
-      "id": "097f",
-      "name": "vivek",
-      "age": "31",
-      "aadharnumber": "987897977",
-      "cheackin": "2025-12-19",
-      "cheackout": "2025-12-26",
-      "city": "delhi",
-      "person": 500
     }
   ],
-  "Movie":[
+  "Movie": [
     {
-      "movie name": "border 2",
-      "date":"2026-13-01",
-      "city":"bhopal",
-      "person":"2"
+      "moviename": "border 2",
+      "date": "2026-13-01",
+      "city": "bhopal",
+      "person": "2",
+      "id": "6667"
     }
   ]
-  
 }
