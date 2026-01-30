@@ -41,7 +41,7 @@ const App = () => {
         <tr style={{ border: "2px solid black" }} key={e.id}>
             <td>{e.moviename}</td>
             <td>{e.date}</td>
-             <td>{e.city}</td>
+            <td>{e.city}</td>
              <td>{e.person}</td>
              <td onClick={()=>{DeleteData(e.id)}}>delete</td>
         </tr>
