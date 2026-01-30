@@ -43,7 +43,7 @@ const App = () => {
              <td>{e.date}</td>
              <td>{e.city}</td>
              <td>{e.person}</td>
-            <td onClick={()=>{DeleteData(e.id)}}>delete</td>
+             <td onClick={()=>{DeleteData(e.id)}}>delete</td>
         </tr>
         ))}
     </tbody>
