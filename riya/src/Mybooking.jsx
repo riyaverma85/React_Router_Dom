@@ -9,7 +9,7 @@ const App = () => {
             console.log(res.data)
             setData(res.data)
         }).catch((err)=>{
-        console.log("error")
+        console.log("error",err)
     })
     }
 
@@ -27,9 +27,9 @@ const App = () => {
   return (
     <>
 <h1>my booking</h1>
-<table className='border'>
+<table style={{ border: "2px solid black" }}>
     <thead>
-        <tr className='border'>
+        <tr style={{ border: "2px solid black" }}>
             <th>Movie Name</th>
             <th>Date</th>
             <th>City</th>
@@ -38,7 +38,7 @@ const App = () => {
     </thead>
     <tbody>
         {Data.map((e)=>(
-        <tr style={{border:"2"}} key={e.id}>
+        <tr style={{ border: "2px solid black" }} key={e.id}>
             <td>{e.moviename}</td>
             <td>{e.date}</td>
             <td>{e.city}</td>
