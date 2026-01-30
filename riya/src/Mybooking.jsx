@@ -33,7 +33,7 @@ const App = () => {
              <th>Movie Name</th>
              <th>Date</th>
              <th>City</th>
-            <th>Person</th>
+             <th>Person</th>
         </tr>
     </thead>
     <tbody>
