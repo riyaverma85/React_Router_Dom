@@ -34,7 +34,7 @@ const App = () => {
              <th>Date</th>
              <th>City</th>
              <th>Person</th>
-        </tr>
+         </tr>
     </thead>
     <tbody>
         {Data.map((e)=>(
