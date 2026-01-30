@@ -29,7 +29,7 @@ const App = () => {
 <h1>my booking</h1>
 <table style={{ border: "2px solid black" }}>
     <thead>
-        <tr style={{ border: "2px solid black" }}>
+         <tr style={{ border: "2px solid black" }}>
              <th>Movie Name</th>
              <th>Date</th>
              <th>City</th>
