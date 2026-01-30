@@ -32,7 +32,7 @@ const App = () => {
         <tr style={{ border: "2px solid black" }}>
              <th>Movie Name</th>
              <th>Date</th>
-            <th>City</th>
+             <th>City</th>
             <th>Person</th>
         </tr>
     </thead>
