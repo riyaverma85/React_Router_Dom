@@ -6,8 +6,7 @@ const MainChild = () => {
     <>
     <h1>child</h1>
     <p>my name is{mydata.name}</p>
-    
-</>
+    </>
   )
 }
 
