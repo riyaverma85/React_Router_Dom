@@ -1,8 +1,11 @@
 import React from 'react'
+import MainParent from './MainParent'
 
 const Mainmid = () => {
   return (
-    <>Mainmid</>
+    <>Mainmid
+    
+    <MainParent/></>
   )
 }
 

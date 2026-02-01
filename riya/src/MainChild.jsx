@@ -5,9 +5,8 @@ const MainChild = () => {
   return (
     <>
     <h1>child</h1>
-    MainChild
     
-    <p>my name is{mydata.city}</p>
+    <p>my name is{mydata.name}</p>
     
     </>
   )
