@@ -1,12 +1,13 @@
 
 import { createRoot } from 'react-dom/client'
 
-import App from "./ContextApi.jsx"
+import App from "./MainChild.jsx"
  import { BrowserRouter } from 'react-router-dom'
 import UserContext from './ContextApi.jsx'
 
 let mydata={
-     name:"Riya"
+     name:"Riya",
+     city:"bhopal"
 }
 
 createRoot(document . getElementById ('root')) . render(

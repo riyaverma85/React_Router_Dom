@@ -3,9 +3,10 @@ import MainParent from './MainParent'
 
 const Mainmid = () => {
   return (
-    <>Mainmid
+    <>
+    <h1>Mainmid Component</h1>
     
-    <MainParent/></>
+  </>
   )
 }
 
