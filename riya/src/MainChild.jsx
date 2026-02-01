@@ -1,9 +1,15 @@
 import React, { useContext } from 'react'
-
+import UserContext from './ContextApi'
 const MainChild = () => {
-     let{mydata,Institute}=useContext(UserContext)
+     let{mydata}=useContext(UserContext)
   return (
-    <>MainChild</>
+    <>
+    <h1>child</h1>
+    MainChild
+    
+    <p>my name is{mydata.city}</p>
+    
+    </>
   )
 }
 
