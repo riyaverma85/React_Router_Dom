@@ -9,12 +9,10 @@ let mydata={
      name:"Riya"
 }
 
-
 createRoot(document . getElementById ('root')) . render(
     <UserContext.Provider value={mydata}>
      <BrowserRouter>
           <App/>
      </BrowserRouter>
-    
   </UserContext.Provider>
 )
