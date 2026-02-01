@@ -5,8 +5,13 @@ import App from "./Mybooking.jsx"
  import { BrowserRouter } from 'react-router-dom'
 import UserContext from './ContextApi.jsx'
 
+let mydata={
+     name:"Riya"
+}
+
+
 createRoot(document . getElementById ('root')) . render(
-    <UserContext.Provider value={"Riya Sharma"}>
+    <UserContext.Provider value={mydata}>
      <BrowserRouter>
           <App/>
      </BrowserRouter>
