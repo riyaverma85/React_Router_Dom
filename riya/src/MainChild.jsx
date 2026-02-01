@@ -5,7 +5,6 @@ const MainChild = () => {
   return (
     <>
     <h1>child</h1>
-    
     <p>my name is{mydata.name}</p>
     
     </>
