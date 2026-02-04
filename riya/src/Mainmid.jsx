@@ -4,7 +4,7 @@ import MainParent from './MainParent'
 const Mainmid = () => {
   return (
     <>
-    <h1>i s Mainmid Component</h1>
+    <h1> i s Mainmid Component</h1>
     
   </>
   )
