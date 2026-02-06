@@ -174,7 +174,7 @@ const App = () => {
   return (
    <>
     <Navbar/>
-       Welcome to re
+       Welcome to r
     <Footer/>
    </>
   )
