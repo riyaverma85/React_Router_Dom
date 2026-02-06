@@ -174,7 +174,7 @@ const App = () => {
   return (
    <>
     <Navbar/>
-       Welcome to reac
+       Welcome to rea
     <Footer/>
    </>
   )
