@@ -5,7 +5,7 @@ const MainChild = () => {
      let mydata=useContext(UserContext)
   return (
     <>
-    <h1>child</h1>
+    <h1>child</h1> 
     <p>my name is{mydata.name}</p>
     <MainParent/>
     </>
