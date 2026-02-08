@@ -175,7 +175,7 @@ const App = () => {
    <>
      <Navbar/>
        Welcome to 
-    <Footer/>
+     <Footer/>
    </>
   )
 }
