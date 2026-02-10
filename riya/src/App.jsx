@@ -174,7 +174,7 @@ const App = () => {
   return (
    <>
      <Navbar/>
-           Welcome to riya ....
+            Welcome to riya ....
      <Footer/>
    </>
   )
