@@ -10,8 +10,9 @@ const Profile = ({  img,name, city }) => {
   )
 
 
-
   
+
+
 
 
 
