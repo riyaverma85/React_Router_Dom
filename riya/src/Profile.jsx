@@ -10,7 +10,7 @@ const Profile = ({  img,name, city }) => {
   )
 
 
-gg
+
 
 
 
