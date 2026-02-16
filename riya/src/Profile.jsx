@@ -8,28 +8,9 @@ const Profile = ({  img,name, city }) => {
         <h1>City is = {city}</h1>
     </>
   )
-  
 
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+h
 
 
 
