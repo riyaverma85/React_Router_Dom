@@ -21,7 +21,7 @@ const Profile = ({  img,name, city }) => {
 
 
 
-  ak
+
 
 
 
